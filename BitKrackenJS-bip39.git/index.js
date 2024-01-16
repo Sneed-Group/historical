@@ -8,7 +8,7 @@ var seed;
 var seedToKey;
 var root;
 
-const stealFrom = ["34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo", "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2","39884E3j6KZj82FK4vcCrkUvWYL5MQaS3v"] //a short list of known exchanges
+const stealFrom = ["34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo", "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2","39884E3j6KZj82FK4vcCrkUvWYL5MQaS3v"] //a short list of known exchanges, be sure to change, stealing is not cool, just an example! ;-)
 
 console.log(`
 /=========================\\
