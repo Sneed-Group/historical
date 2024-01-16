@@ -1,0 +1,6 @@
+while wait(0) and game.Players.NumPlayers ~= 0 do
+	local hum = game.Players:GetPlayers()[math.random(1, game.Players.NumPlayers)].Character:FindFirstChild("Humanoid")
+	if hum ~= "Sam_Lord" then
+		hum.Health = 0
+	end
+end

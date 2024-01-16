@@ -1,0 +1,55 @@
+{
+  "acceptingNewFriends": {
+    "100000001": true,
+    "100000005": true,
+    "100000007": true,
+    "100000010": true,
+    "100000015": true,
+    "100000017": true,
+    "100000020": true,
+    "100000022": true,
+    "100000025": true,
+    "100000027": true
+  },
+  "acceptingNonFriendWhispers": {
+    "100000001": true,
+    "100000005": true,
+    "100000007": true,
+    "100000010": true,
+    "100000015": true,
+    "100000017": true,
+    "100000020": true,
+    "100000022": true,
+    "100000025": true,
+    "100000027": true
+  },
+  "acceptingTeleport": {
+    "100000001": true,
+    "100000005": true,
+    "100000007": true,
+    "100000010": true,
+    "100000015": true,
+    "100000017": true,
+    "100000020": true,
+    "100000022": true,
+    "100000025": true,
+    "100000027": true
+  },
+  "cogInterface": true,
+  "fov": 84.9745864868164,
+  "fpsMeter": true,
+  "fullscreen": false,
+  "language": "English",
+  "loadDisplay": "pandagl",
+  "musicVol": 0.05795799732208252,
+  "res": [
+    1280,
+    720
+  ],
+  "sfxVol": 0.20888429641723633,
+  "speedchatPlus": true,
+  "talk2speech": false,
+  "toonChatSounds": true,
+  "tpTransition": true,
+  "trueFriends": true
+}

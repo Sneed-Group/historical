@@ -1,0 +1,33 @@
+# /etc/conf.d/moneyrocketd: config file for /etc/init.d/moneyrocketd
+
+# Config file location
+#MONEYROCKETD_CONFIGFILE="/etc/moneyrocket/moneyrocket.conf"
+
+# What directory to write pidfile to?  (created and owned by $MONEYROCKETD_USER)
+#MONEYROCKETD_PIDDIR="/var/run/moneyrocketd"
+
+# What filename to give the pidfile
+#MONEYROCKETD_PIDFILE="${MONEYROCKETD_PIDDIR}/moneyrocketd.pid"
+
+# Where to write moneyrocketd data (be mindful that the blockchain is large)
+#MONEYROCKETD_DATADIR="/var/lib/moneyrocketd"
+
+# User and group to own moneyrocketd process
+#MONEYROCKETD_USER="moneyrocket"
+#MONEYROCKETD_GROUP="moneyrocket"
+
+# Path to moneyrocketd executable
+#MONEYROCKETD_BIN="/usr/bin/moneyrocketd"
+
+# Nice value to run moneyrocketd under
+#MONEYROCKETD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#MONEYROCKETD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for moneyrocketd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+MONEYROCKETD_SIGTERM_TIMEOUT=600

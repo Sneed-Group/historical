@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>NodeMixaholic</title>
+    <style>
+    @keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+    </style>
+  </head>
+  <body style="     background-image: url(bg3.bmp); color: rgb(215, 107, 107);">
+    <p style="text-align: center;"><img src="btrainbow1_e0.gif" alt="WARNING - CONSTRUCTION ZONE!"><strong><span
+          style="background-color: #fe6652; color: #0000ff;"><br>
+        </span></strong></p>
+    <p style="text-align: center;"><strong> </strong></p>
+    <p style="text-align: center;">&nbsp;</p>
+    <p style="text-align: center;">&nbsp;</p>
+    <form>
+      <select name="menu">
+        <option value="index.html">Home</option>
+        <option value="archive.html">Archive</option>
+        <option value="dont.html">DO NOT CLICK</option>
+        <option value="fave.html">Favorite Stuff</option>
+      </select>
+      <input onclick="location=this.form.menu.options[this.form.menu.selectedIndex].value;"
+value="Go!" type="button"></form>
+    <audio controls="controls" autoplay="autoplay" loop=""><source type="audio/mpeg"
+        src="crawl.mp3"></audio>
+    <h2 style="  text-align: center; background-color: #000100;"><span style="color: #33ff33;"><span
+          style="font-family: Times New Roman;"><marquee>Yea I like HTML -
+            HaTe(node)MixaholicL - Welcome to NodeMixaholic's site!</marquee><span
+            style="font-family: serif;"></span></span></span></h2>
+    <h1><strong><strong><span style="background-color: #fe6652; color: #0000ff;"><img
+              style="display: block; margin-left: auto; margin-right: auto;" src="giphy.gif"
+              alt="welcome" height="35%" width="65%"></span></strong></strong></h1>
+    <p style="text-align: center;"><img style="margin-top: 97px; width: 501px; height: 172px;"
+        src="funny-error2.gif" alt="Image result for geocities gif"><img style="margin-top: 83px; display: block; margin-left: auto; margin-right: auto; width: 439px; height: 150px;"
+        src="funny-error1.jpg" alt="Related image"></p>
+    <p style="text-align: center;"></p>
+    <h1><strong><span style="background-color: #fe6652; color: #0000ff;">Hello,
+          World!</span></strong></h1>
+    <p><strong> </strong></p>
+    <h3><strong><span style="background-color: #fe6652; color: #0000ff;">Welcome
+          to my site! My name is Samuel, but you can just call me NodeMixaholic!
+          I hope you enjoy my website!</span></strong></h3>
+    <p><strong> <strong> </strong></strong></p>
+    <p><strong><strong><span style="background-color: #fe6652; color: #0000ff;"><br>
+          </span></strong></strong></p>
+    <p><strong><strong> </strong></strong></p>
+    <h1 style="text-align: center; color: #ff0000;"><span style="font-family: comic sans ms,sans-serif; font-size: xx-large;"><a
+          href="gif.html"><strong>Image Gallery</strong></a></span><a href="gif.html"><br>
+      </a></h1>
+    <h1 style="text-align: center; color: #ff0000;"><strong><strong> </strong></strong></h1>
+    <h1 style="color: #ff0000;"><strong><strong> </strong></strong></h1>
+    <p><a onclick="alert("> </a></p>
+    <p><button onclick="alert('Ok, this is it.');">Click me to be alerted!</button></p>
+    <p>&nbsp;</p>
+    <h1 style="color: #ff0000;"><strong><strong> </strong></strong></h1>
+    <h1 style="text-align: center; color: #ff0000;"><strong><strong> </strong></strong></h1>
+    <p style="text-align: center;"><strong> </strong></p>
+    <p style="text-align: center;">&nbsp;</p>
+    <p style="text-align: center;"><strong><strong> <strong> </strong></strong></strong></p>
+    <p style="text-align: center;"><span style="background-color: #ffffff;"><strong><strong><strong><br>
+            </strong></strong></strong></span></p>
+    <p style="text-align: center;">&nbsp;</p>
+    <dl style="text-align: center;">
+      <dt>
+        <h1><span style="font-family: Comic Sans MS;">&nbsp;Fav GIFS</span></h1>
+      </dt>
+    </dl>
+    <p style="text-align: center;"><img style="margin-top: 126px; display: block; margin-left: auto; margin-right: auto; width: 328px; height: 78px;"
+        src="blessed.gif" alt="Image result for geocities gif"><img style="display: block; margin-left: auto; margin-right: auto; width: 357px; height: 85px;"
+        src="spam.gif" alt="Who gives a Spam?"></p>
+    <p style="text-align: center;"><img src="idc.gif" alt="IDC LOL" style="width: 373px; height: 281px;"><img
+        src="clippy.gif" alt="" style="width: 151px; height: 182px;"></p>
+    <p style="text-align: center;"></p>
+    <div width="69%" style="text-align: center;"> <marquee>
+        <p class="b"><img style="margin-top: 112px; width: 87px; height: 126px;"
+            src="bb.gif" alt="Image result for baby dancing gif"><i><b><span style="font-family: Comic Sans MS;">baby
+                cant fight that feeling THAT HE DOESN'T CARE!!! :D</span></b></i><img
+            style="margin-top: 112px; width: 87px; height: 126px;" src="bb.gif"
+            alt="Image result for baby dancing gif"></p>
+      </marquee> </div>
+    <p style="text-align: center;"><br>
+    </p>
+    <p style="text-align: center;"><strong>&nbsp;</strong></p>
+    <p style="text-align: center;"><strong> </strong></p>
+    <p style="text-align: center;">Copyright Samuel Lord. All rights reserved. </p>
+    <p style="text-align: center;"><strong><strong> </strong> </strong></p>
+    <br>
+    <div style="text-align: center;"><a href="https://www.mozilla.org/en-US/firefox/new/?utm_medium=referral&amp;utm_source=firefox-com"><img
+          style="border: 0px solid; width: 107px; height: 36px;" src="firefox.bmp"
+          alt="Best viewed with Firefox 3" height="25%" width="45%"></a></div>
+  </body>
+  <!-- Hosted by www.Geocities.ws --><!-- Hosted by www.Geocities.ws -->
+</html>

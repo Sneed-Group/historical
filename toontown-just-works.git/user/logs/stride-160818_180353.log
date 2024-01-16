@@ -1,0 +1,334 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x2024AB48>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.3, 0.3, 0.35, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 63, 27, 52, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_DG.pdna
+Reading DNA file... phase_8/dna/storage_DG_sz.pdna
+Reading DNA file... phase_8/dna/daisys_garden_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_OZ.pdna
+Reading DNA file... phase_6/dna/storage_OZ_sz.pdna
+Reading DNA file... phase_6/dna/outdoor_zone_sz.pdna
+TIMER startTime 1520
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_DL.pdna
+Reading DNA file... phase_8/dna/storage_DL_sz.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_8/dna/storage_DL_town.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_9300.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+adjusting item index -1
+exiting due to lack of items
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_GS.pdna
+Reading DNA file... phase_6/dna/storage_GS_sz.pdna
+Reading DNA file... phase_6/dna/goofy_speedway_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+gardenPage Unloading
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.3, 0.3, 0.35, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1
+    import toontown
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1
+    import toontown
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1
+    import toontown
+    ^
+IndentationError: unexpected indent
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_5/dna/storage_TT_town.pdna
+Reading DNA file... phase_5/dna/toontown_central_2300.pdna
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 5, in <module>
+  File "toontown\suit\SuitBase.py", line 70, in setLevel
+    self.maxHP = attributes['hp'][self.level]
+TypeError: tuple indices must be integers, not float
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 5, in <module>
+  File "toontown\suit\SuitBase.py", line 70, in setLevel
+    self.maxHP = attributes['hp'][self.level]
+IndexError: tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_6/dna/storage_DD_town.pdna
+Reading DNA file... phase_6/dna/donalds_dock_1200.pdna
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 3, in <module>
+AttributeError: 'LocalToon' object has no attribute 'setSkelecog'
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_BR.pdna
+Reading DNA file... phase_8/dna/storage_BR_sz.pdna
+Reading DNA file... phase_8/dna/the_burrrgh_sz.pdna
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Activated
+Exception occurred while processing Func-catch-8248 of Sequence-8234:
+Sequence-8234:
+  0.000 Sequence-8234 {
+  0.000   *Func-catch-8248
+  0.000   *Func-catch-8249
+  0.000   *Func-catch-8250
+  0.000   *Func-catch-8251
+  0.000   *Func-catch-8252
+  0.000   *Func-catch-8253
+  0.000   *Func-catch-8254
+  0.000   *Func-catch-8255
+  0.000   *Func-catch-8256
+  0.000   *Func-catch-8257
+  0.000   *Func-catch-8258
+  0.000   *Func-catch-8259
+  0.000   *Func-catch-8260
+  0.000   *Func-catch-8261
+  0.000   *Func-catch-8262
+  0.000   *Func-catch-8263
+  0.000   *Func-catch-8264
+  0.000   *Func-catch-8265
+  0.000   *Func-catch-8266
+  0.000   *Func-catch-8267
+  0.000   *Func-catch-8268
+  0.000   *Func-catch-8269
+  0.000   *Func-catch-8270
+  0.000   Wait dur 1
+  1.000   *Func-sell-8271
+  1.000 }
+
+Traceback (most recent call last):
+  File "C:\Panda3D-1.10.0\direct\showbase\ShowBase.py", line 1829, in __ivalLoop
+    IntervalManager.ivalMgr.step()
+  File "C:\Panda3D-1.10.0\direct\interval\IntervalManager.py", line 94, in step
+    self.__doPythonCallbacks()
+  File "C:\Panda3D-1.10.0\direct\interval\IntervalManager.py", line 122, in __doPythonCallbacks
+    self.ivals[index].privPostEvent()
+  File "C:\Panda3D-1.10.0\direct\interval\MetaInterval.py", line 519, in privPostEvent
+    self.__doPythonCallbacks()
+  File "C:\Panda3D-1.10.0\direct\interval\MetaInterval.py", line 495, in __doPythonCallbacks
+    ival.privDoEvent(t, eventType)
+  File "C:\Panda3D-1.10.0\direct\interval\Interval.py", line 206, in privDoEvent
+    self.privInstant()
+  File "C:\Panda3D-1.10.0\direct\interval\FunctionInterval.py", line 88, in privInstant
+    self.function(*self.extraArgs, **self.kw)
+  File "<string>", line 12, in catch
+  File "toontown\fishing\DistributedFishingPond.py", line 78, in d_hitTarget
+    self.localToonSpot.hitTarget()
+AttributeError: 'NoneType' object has no attribute 'hitTarget'
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "C:\Panda3D-1.10.0\direct\showbase\ShowBase.py", line 1829, in __ivalLoop
+    IntervalManager.ivalMgr.step()
+  File "C:\Panda3D-1.10.0\direct\interval\IntervalManager.py", line 94, in step
+    self.__doPythonCallbacks()
+  File "C:\Panda3D-1.10.0\direct\interval\IntervalManager.py", line 122, in __doPythonCallbacks
+    self.ivals[index].privPostEvent()
+  File "C:\Panda3D-1.10.0\direct\interval\MetaInterval.py", line 519, in privPostEvent
+    self.__doPythonCallbacks()
+  File "C:\Panda3D-1.10.0\direct\interval\MetaInterval.py", line 495, in __doPythonCallbacks
+    ival.privDoEvent(t, eventType)
+  File "C:\Panda3D-1.10.0\direct\interval\Interval.py", line 206, in privDoEvent
+    self.privInstant()
+  File "C:\Panda3D-1.10.0\direct\interval\FunctionInterval.py", line 88, in privInstant
+    self.function(*self.extraArgs, **self.kw)
+  File "<string>", line 12, in catch
+  File "toontown\fishing\DistributedFishingPond.py", line 78, in d_hitTarget
+    self.localToonSpot.hitTarget()
+AttributeError: 'NoneType' object has no attribute 'hitTarget'

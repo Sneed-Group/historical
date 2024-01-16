@@ -1,0 +1,36 @@
+local Victim = _G.REVIZIONVAR -- The player you want to kill
+
+--[[
+Credit to Cyclone Admin Commands for this function
+]]
+
+Players = game.Players
+LocalPlayer = game.Players.LocalPlayer
+
+local torsoname = "Torso"
+	if LocalPlayer.Character:FindFirstChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then
+	    torsoname = "UpperTorso"
+	end
+	if Players[_G.REVIZIONVAR].Character ~= nil then
+	    local savepos = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+	    LocalPlayer.Character:FindFirstChild(torsoname).Anchored = true
+	    local tool = Instance.new("Tool", LocalPlayer.Backpack)
+	    local hat = LocalPlayer.Character:FindFirstChildOfClass("Accessory")
+	    local hathandle = hat.Handle
+	    hathandle.Parent = tool
+	    hathandle.Massless = true
+	    tool.GripPos = Vector3.new(0, 9e99, 0)
+	    tool.Parent = LocalPlayer.Character
+	    repeat wait() until LocalPlayer.Character:FindFirstChildOfClass("Tool") ~= nil
+	    tool.Grip = CFrame.new(Vector3.new(0, 0, 0))
+	    LocalPlayer.Character:FindFirstChild(torsoname).Anchored = false
+	    repeat
+	        LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Players[_G.REVIZIONVAR].Character:FindFirstChild("HumanoidRootPart").CFrame
+	        wait()
+	    until Players[_G.REVIZIONVAR].Character == nil or Players[_G.REVIZIONVAR].Character:FindFirstChild("Humanoid").Health <= 0 or LocalPlayer.Character == nil or LocalPlayer.Character:FindFirstChild("Humanoid").Health <= 0 or (Players[_G.REVIZIONVAR].Character:FindFirstChild("HumanoidRootPart").Velocity.Magnitude - Players[_G.REVIZIONVAR].Character:FindFirstChild("Humanoid").WalkSpeed) > (Players[_G.REVIZIONVAR].Character:FindFirstChild("Humanoid").WalkSpeed + 20)
+	    LocalPlayer.Character:FindFirstChild("Humanoid"):UnequipTools()
+	    hathandle.Parent = hat
+	    hathandle.Massless = false
+	    tool:Destroy()
+	    LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = savepos
+	end

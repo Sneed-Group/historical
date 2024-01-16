@@ -1,0 +1,720 @@
+--[[
+                                        
+                                    
+  _ __  _ __    _______  _ __   ___ 
+ | '_ \| '_ \  |_  / _ \| '_ \ / _ \
+ | | | | | | |  / / (_) | | | |  __/
+ |_| |_|_| |_| /___\___/|_| |_|\___|
+                                    
+                                    
+]]
+
+-- created by .absolutenn#3791 
+local nnzone = Instance.new("ScreenGui")
+local pbackground = Instance.new("Frame")
+local frontpanel = Instance.new("Frame")
+local exitButton = Instance.new("TextButton")
+local header = Instance.new("TextLabel")
+local criminalButton = Instance.new("TextButton")
+local policeButton = Instance.new("TextButton")
+local neutralButton = Instance.new("TextButton")
+local prisonerButton = Instance.new("TextButton")
+local grabgunsButton = Instance.new("TextButton")
+local modifyButton = Instance.new("TextButton")
+local wsplusButton = Instance.new("TextButton")
+local wpminButton = Instance.new("TextButton")
+local jpminButton = Instance.new("TextButton")
+local jpplusButton = Instance.new("TextButton")
+local superpnchButton = Instance.new("TextButton")
+local flyButton = Instance.new("TextButton")
+local prisontpButton = Instance.new("TextButton")
+local crimtpButton = Instance.new("TextButton")
+local removedoorsButton = Instance.new("TextButton")
+local loader = Instance.new("Frame")
+local frontpanel_2 = Instance.new("Frame")
+local prisonlifeButton = Instance.new("TextButton")
+local header_2 = Instance.new("TextLabel")
+local madeby = Instance.new("TextLabel")
+local exitButton_2 = Instance.new("TextButton")
+--Properties:
+nnzone.Name = "nnzone"
+nnzone.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+nnzone.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+pbackground.Name = "pbackground"
+pbackground.Parent = nnzone
+pbackground.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+pbackground.BorderColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+pbackground.Position = UDim2.new(0.0171822309, 0, 0.665105462, 0)
+pbackground.Size = UDim2.new(0, 317, 0, 264)
+
+frontpanel.Name = "frontpanel"
+frontpanel.Parent = pbackground
+frontpanel.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+frontpanel.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+frontpanel.Position = UDim2.new(0.0190569274, 0, 0.02309094, 0)
+frontpanel.Size = UDim2.new(0, 306, 0, 253)
+
+exitButton.Name = "exitButton"
+exitButton.Parent = pbackground
+exitButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+exitButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+exitButton.Position = UDim2.new(0.876971602, 0, 0.0492424257, 0)
+exitButton.Size = UDim2.new(0, 27, 0, 21)
+exitButton.Font = Enum.Font.Gotham
+exitButton.Text = "X"
+exitButton.TextColor3 = Color3.new(1, 1, 1)
+exitButton.TextSize = 14
+
+header.Name = "header"
+header.Parent = pbackground
+header.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+header.BorderColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+header.Position = UDim2.new(0.0587013736, 0, 0.0344202854, 0)
+header.Size = UDim2.new(0, 123, 0, 16)
+header.Font = Enum.Font.Gotham
+header.Text = "nn zone - prisonlife"
+header.TextColor3 = Color3.new(1, 1, 1)
+header.TextSize = 14
+
+criminalButton.Name = "criminalButton"
+criminalButton.Parent = pbackground
+criminalButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+criminalButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+criminalButton.Position = UDim2.new(0.0304155312, 5, 0.142952532, 0)
+criminalButton.Size = UDim2.new(0, 142, 0, 18)
+criminalButton.Font = Enum.Font.Gotham
+criminalButton.Text = "Criminal "
+criminalButton.TextColor3 = Color3.new(1, 1, 1)
+criminalButton.TextSize = 13
+
+policeButton.Name = "policeButton"
+policeButton.Parent = pbackground
+policeButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+policeButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+policeButton.Position = UDim2.new(0.487828761, 5, 0.142952532, 0)
+policeButton.Size = UDim2.new(0, 142, 0, 18)
+policeButton.Font = Enum.Font.Gotham
+policeButton.Text = "Police"
+policeButton.TextColor3 = Color3.new(1, 1, 1)
+policeButton.TextSize = 13
+
+neutralButton.Name = "neutralButton"
+neutralButton.Parent = pbackground
+neutralButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+neutralButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+neutralButton.Position = UDim2.new(0.487828761, 5, 0.223100007, 0)
+neutralButton.Size = UDim2.new(0, 142, 0, 18)
+neutralButton.Font = Enum.Font.Gotham
+neutralButton.Text = "Neutral"
+neutralButton.TextColor3 = Color3.new(1, 1, 1)
+neutralButton.TextSize = 13
+
+prisonerButton.Name = "prisonerButton"
+prisonerButton.Parent = pbackground
+prisonerButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+prisonerButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+prisonerButton.Position = UDim2.new(0.0304155052, 5, 0.223100007, 0)
+prisonerButton.Size = UDim2.new(0, 142, 0, 18)
+prisonerButton.Font = Enum.Font.Gotham
+prisonerButton.Text = "Prisoner"
+prisonerButton.TextColor3 = Color3.new(1, 1, 1)
+prisonerButton.TextSize = 13
+
+grabgunsButton.Name = "grabgunsButton"
+grabgunsButton.Parent = pbackground
+grabgunsButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+grabgunsButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+grabgunsButton.Position = UDim2.new(0.0304155312, 5, 0.303000003, 0)
+grabgunsButton.Size = UDim2.new(0, 287, 0, 18)
+grabgunsButton.Font = Enum.Font.Gotham
+grabgunsButton.Text = "Grab Guns"
+grabgunsButton.TextColor3 = Color3.new(1, 1, 1)
+grabgunsButton.TextSize = 13
+
+modifyButton.Name = "modifyButton"
+modifyButton.Parent = pbackground
+modifyButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+modifyButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+modifyButton.Position = UDim2.new(0.0304155312, 5, 0.381999999, 0)
+modifyButton.Size = UDim2.new(0, 287, 0, 18)
+modifyButton.Font = Enum.Font.Gotham
+modifyButton.Text = "Modify Gun (Eqiupped)"
+modifyButton.TextColor3 = Color3.new(1, 1, 1)
+modifyButton.TextSize = 13
+
+wsplusButton.Name = "wsplusButton"
+wsplusButton.Parent = pbackground
+wsplusButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+wsplusButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+wsplusButton.Position = UDim2.new(0.0304155312, 5, 0.463, 0)
+wsplusButton.Size = UDim2.new(0, 142, 0, 18)
+wsplusButton.Font = Enum.Font.Gotham
+wsplusButton.Text = "Walkspeed + 10"
+wsplusButton.TextColor3 = Color3.new(1, 1, 1)
+wsplusButton.TextSize = 13
+
+wpminButton.Name = "wpminButton"
+wpminButton.Parent = pbackground
+wpminButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+wpminButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+wpminButton.Position = UDim2.new(0.487828761, 5, 0.463, 0)
+wpminButton.Size = UDim2.new(0, 142, 0, 18)
+wpminButton.Font = Enum.Font.Gotham
+wpminButton.Text = "Walkspeed - 10"
+wpminButton.TextColor3 = Color3.new(1, 1, 1)
+wpminButton.TextSize = 13
+
+jpminButton.Name = "jpminButton"
+jpminButton.Parent = pbackground
+jpminButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+jpminButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+jpminButton.Position = UDim2.new(0.487828761, 5, 0.541999996, 0)
+jpminButton.Size = UDim2.new(0, 142, 0, 18)
+jpminButton.Font = Enum.Font.Gotham
+jpminButton.Text = "Jumpower - 10"
+jpminButton.TextColor3 = Color3.new(1, 1, 1)
+jpminButton.TextSize = 13
+
+jpplusButton.Name = "jpplusButton"
+jpplusButton.Parent = pbackground
+jpplusButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+jpplusButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+jpplusButton.Position = UDim2.new(0.0304155052, 5, 0.541999996, 0)
+jpplusButton.Size = UDim2.new(0, 142, 0, 18)
+jpplusButton.Font = Enum.Font.Gotham
+jpplusButton.Text = "Jumpower + 10"
+jpplusButton.TextColor3 = Color3.new(1, 1, 1)
+jpplusButton.TextSize = 13
+
+superpnchButton.Name = "superpnchButton"
+superpnchButton.Parent = pbackground
+superpnchButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+superpnchButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+superpnchButton.Position = UDim2.new(0.0304155312, 5, 0.623000026, 0)
+superpnchButton.Size = UDim2.new(0, 287, 0, 18)
+superpnchButton.Font = Enum.Font.Gotham
+superpnchButton.Text = "Super Punch"
+superpnchButton.TextColor3 = Color3.new(1, 1, 1)
+superpnchButton.TextSize = 13
+
+flyButton.Name = "flyButton"
+flyButton.Parent = pbackground
+flyButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+flyButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+flyButton.Position = UDim2.new(0.0304155312, 5, 0.699999988, 0)
+flyButton.Size = UDim2.new(0, 287, 0, 18)
+flyButton.Font = Enum.Font.Gotham
+flyButton.Text = "Fly (e)"
+flyButton.TextColor3 = Color3.new(1, 1, 1)
+flyButton.TextSize = 13
+
+prisontpButton.Name = "prisontpButton"
+prisontpButton.Parent = pbackground
+prisontpButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+prisontpButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+prisontpButton.Position = UDim2.new(0.0304155312, 5, 0.782000005, 0)
+prisontpButton.Size = UDim2.new(0, 142, 0, 18)
+prisontpButton.Font = Enum.Font.Gotham
+prisontpButton.Text = "TP Prison"
+prisontpButton.TextColor3 = Color3.new(1, 1, 1)
+prisontpButton.TextSize = 13
+
+crimtpButton.Name = "crimtpButton"
+crimtpButton.Parent = pbackground
+crimtpButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+crimtpButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+crimtpButton.Position = UDim2.new(0.487828761, 5, 0.782000005, 0)
+crimtpButton.Size = UDim2.new(0, 142, 0, 18)
+crimtpButton.Font = Enum.Font.Gotham
+crimtpButton.Text = "TP Criminal Base"
+crimtpButton.TextColor3 = Color3.new(1, 1, 1)
+crimtpButton.TextSize = 13
+
+removedoorsButton.Name = "removedoorsButton"
+removedoorsButton.Parent = pbackground
+removedoorsButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+removedoorsButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+removedoorsButton.Position = UDim2.new(0.0304155312, 5, 0.862999976, 0)
+removedoorsButton.Size = UDim2.new(0, 287, 0, 18)
+removedoorsButton.Font = Enum.Font.Gotham
+removedoorsButton.Text = "Remove Doors"
+removedoorsButton.TextColor3 = Color3.new(1, 1, 1)
+removedoorsButton.TextSize = 13
+
+loader.Name = "loader"
+loader.Parent = nnzone
+loader.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+loader.BorderColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+loader.Position = UDim2.new(0.423104495, 0, 0.402810365, 0)
+loader.Size = UDim2.new(0, 249, 0, 97)
+
+frontpanel_2.Name = "frontpanel"
+frontpanel_2.Parent = loader
+frontpanel_2.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+frontpanel_2.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+frontpanel_2.Position = UDim2.new(0.018980708, 0, 0.0226250477, 0)
+frontpanel_2.Size = UDim2.new(0, 240, 0, 92)
+
+prisonlifeButton.Name = "prisonlifeButton"
+prisonlifeButton.Parent = frontpanel_2
+prisonlifeButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+prisonlifeButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+prisonlifeButton.Position = UDim2.new(0.00833333377, 5, 0.644869566, 0)
+prisonlifeButton.Size = UDim2.new(0, 225, 0, 25)
+prisonlifeButton.Font = Enum.Font.Gotham
+prisonlifeButton.Text = "Prison Life"
+prisonlifeButton.TextColor3 = Color3.new(1, 1, 1)
+prisonlifeButton.TextSize = 13
+
+header_2.Name = "header"
+header_2.Parent = frontpanel_2
+header_2.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+header_2.BorderColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+header_2.Position = UDim2.new(0.225000009, 0, 0.184782594, 0)
+header_2.Size = UDim2.new(0, 123, 0, 16)
+header_2.Font = Enum.Font.Gotham
+header_2.Text = "nn zone - v1.10a"
+header_2.TextColor3 = Color3.new(1, 1, 1)
+header_2.TextSize = 14
+
+madeby.Name = "madeby"
+madeby.Parent = frontpanel_2
+madeby.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+madeby.BorderColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+madeby.Position = UDim2.new(0.258333325, 0, 0.402173907, 0)
+madeby.Size = UDim2.new(0, 123, 0, 16)
+madeby.Font = Enum.Font.Gotham
+madeby.Text = "created by .absolutenn#3791 "
+madeby.TextColor3 = Color3.new(1, 1, 1)
+madeby.TextSize = 14
+
+exitButton_2.Name = "exitButton"
+exitButton_2.Parent = loader
+exitButton_2.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+exitButton_2.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+exitButton_2.Position = UDim2.new(0.845351636, 0, 0.0487466268, 0)
+exitButton_2.Size = UDim2.new(0, 28, 0, 25)
+exitButton_2.Font = Enum.Font.Gotham
+exitButton_2.Text = "X"
+exitButton_2.TextColor3 = Color3.new(1, 1, 1)
+exitButton_2.TextSize = 14
+-- Scripts:
+function exit_button_script() -- exitButton.exitScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = exitButton
+    pbackground.Visible = false
+    loader.Visible = true
+
+end
+coroutine.resume(coroutine.create(exit_button_script))
+function prison_drag_script() -- pbackground.dragScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = pbackground
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(prison_drag_script))
+function hide_prison_script() -- pbackground.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = pbackground
+	local frm = script.Parent
+	frm.Visible = false
+
+end
+coroutine.resume(coroutine.create(hide_prison_script))
+function criminal_prison_script() -- criminalButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = criminalButton
+	script.Parent.MouseButton1Click:Connect(function()
+			local LCS = game.Workspace["Criminals Spawn"].SpawnLocation
+			LCS.CanCollide = false
+			LCS.Size = Vector3.new(51.05, 24.12, 54.76)
+			LCS.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			LCS.Transparency = 1
+			wait(0.5)
+			LCS.CFrame = CFrame.new(-920.510803, 92.2271957, 2138.27002, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+			LCS.Size = Vector3.new(6, 0.2, 6)
+			LCS.Transparency = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(criminal_prison_script))
+function police_prison_script() -- policeButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = policeButton
+	script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Remote.TeamEvent:FireServer("Bright blue")
+	end)
+
+end
+coroutine.resume(coroutine.create(police_prison_script))
+function neutral_prison_script() -- neutralButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = neutralButton
+	script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+	end)
+
+end
+coroutine.resume(coroutine.create(neutral_prison_script))
+function prisoner_prison_script() -- prisonerButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = prisonerButton
+	script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Remote.TeamEvent:FireServer("Bright orange")
+	end)
+
+end
+coroutine.resume(coroutine.create(prisoner_prison_script))
+function grabguns_prison_script() -- grabgunsButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = grabgunsButton
+	script.Parent.MouseButton1Click:Connect(function()
+			for i,v in pairs(game.Workspace.Prison_ITEMS.giver:GetChildren()) do
+			local OwO = game.Workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+			end
+	end)
+
+end
+coroutine.resume(coroutine.create(grabguns_prison_script))
+function modifyguns_prison_script() -- modifyButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = modifyButton
+	script.Parent.MouseButton1Click:Connect(function()
+				local m = require(game:GetService('Players').LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+	                m.Damage = 100
+	                m.MaxAmmo = math.huge
+	                m.CurrentAmmo = math.huge
+	                m.AutoFire = true
+	                m.FireRate = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(modifyguns_prison_script))
+function wsp_prison_script() -- wsplusButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = wsplusButton
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed + 10
+	end)
+
+end
+coroutine.resume(coroutine.create(wsp_prison_script))
+function wsm_prison_script() -- wpminButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = wpminButton
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed - 10
+	end)
+
+end
+coroutine.resume(coroutine.create(wsm_prison_script))
+function jpp_prison_script() -- jpminButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = jpminButton
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower - 10
+	end)
+
+end
+coroutine.resume(coroutine.create(jpp_prison_script))
+function jpm_prison_script() -- jpplusButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = jpplusButton
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower + 10
+	end)
+
+end
+coroutine.resume(coroutine.create(jpm_prison_script))
+function superpunch_prison_script() -- superpnchButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = superpnchButton
+	script.Parent.MouseButton1Click:Connect(function()
+		local mainRemotes = game.ReplicatedStorage
+	meleeRemote = mainRemotes['meleeEvent']
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local punching = false
+	local cooldown = false
+	
+	function punch()
+	cooldown = true
+	local part = Instance.new("Part", game.Players.LocalPlayer.Character)
+	part.Transparency = 1
+	part.Size = Vector3.new(5, 2, 3)
+	part.CanCollide = false
+	local w1 = Instance.new("Weld", part)
+	w1.Part0 = game.Players.LocalPlayer.Character.Torso
+	w1.Part1 = part
+	w1.C1 = CFrame.new(0,0,2)
+	part.Touched:connect(function(hit)
+	if game.Players:FindFirstChild(hit.Parent.Name) then
+	local plr = game.Players:FindFirstChild(hit.Parent.Name)
+	if plr.Name ~= game.Players.LocalPlayer.Name then
+	part:Destroy()
+	
+	for i = 1,100 do
+	meleeRemote:FireServer(plr)
+	end
+	end
+	end
+	end)
+	
+	wait(1)
+	cooldown = false
+	part:Destroy()
+	end
+	
+	
+	mouse.KeyDown:connect(function(key)
+	if cooldown == false then
+	if key:lower() == "f" then
+	
+	punch()
+	
+	end
+	end
+	end)
+	end)
+
+end
+coroutine.resume(coroutine.create(superpunch_prison_script))
+function fly_prison_script() -- flyButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = flyButton
+	script.Parent.MouseButton1Click:Connect(function()
+			repeat wait()
+	   until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Torso
+	local flying = true
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 50
+	local speed = 0
+	
+	function Fly()
+	local bg = Instance.new("BodyGyro", torso)
+	bg.P = 9e4
+	bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+	bg.cframe = torso.CFrame
+	local bv = Instance.new("BodyVelocity", torso)
+	bv.velocity = Vector3.new(0,0.1,0)
+	bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	repeat wait()
+	plr.Character.Humanoid.PlatformStand = true
+	if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+	speed = speed+.5+(speed/maxspeed)
+	if speed > maxspeed then
+	speed = maxspeed
+	end
+	elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+	speed = speed-1
+	if speed < 0 then
+	speed = 0
+	end
+	end
+	if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+	bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+	lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+	elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+	bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+	else
+	bv.velocity = Vector3.new(0,0.1,0)
+	end
+	bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+	until not flying
+	ctrl = {f = 0, b = 0, l = 0, r = 0}
+	lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	speed = 0
+	bg:Destroy()
+	bv:Destroy()
+	plr.Character.Humanoid.PlatformStand = false
+	end
+	mouse.KeyDown:connect(function(key)
+	if key:lower() == "e" then
+	if flying then flying = false
+	else
+	flying = true
+	Fly()
+	end
+	elseif key:lower() == "w" then
+	ctrl.f = 1
+	elseif key:lower() == "s" then
+	ctrl.b = -1
+	elseif key:lower() == "a" then
+	ctrl.l = -1
+	elseif key:lower() == "d" then
+	ctrl.r = 1
+	end
+	end)
+	mouse.KeyUp:connect(function(key)
+	if key:lower() == "w" then
+	ctrl.f = 0
+	elseif key:lower() == "s" then
+	ctrl.b = 0
+	elseif key:lower() == "a" then
+	ctrl.l = 0
+	elseif key:lower() == "d" then
+	ctrl.r = 0
+	end
+	end)
+	Fly()
+	end)
+
+end
+coroutine.resume(coroutine.create(fly_prison_script))
+function tpprison_prison_script() -- prisontpButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = prisontpButton
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(879,99,2377)
+	end)
+
+end
+coroutine.resume(coroutine.create(tpprison_prison_script))
+function tpcrim_prison_script() -- crimtpButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = crimtpButton
+	script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-943, 96, 2055)
+	end)
+
+end
+coroutine.resume(coroutine.create(tpcrim_prison_script))
+function removedoors_prison_script() -- removedoorsButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = removedoorsButton
+	script.Parent.MouseButton1Click:Connect(function()
+			game.Workspace.Prison_Cellblock.doors:Destroy()			
+				for i,v in pairs(workspace:GetChildren())do
+						if v.Name == "Doors" then
+					v:Destroy()
+				end
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(removedoors_prison_script))
+
+-- loader gui 
+
+function select_prisonlife_loader() -- prisonlifeButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = prisonlifeButton
+	script.Parent.MouseButton1Click:Connect(function()
+		pbackground.Visible = true
+			loader.Visible = false
+			--prisonbutton
+	end)
+
+end
+coroutine.resume(coroutine.create(select_prisonlife_loader))
+function exit_button_script1() -- exitButton_2.exitScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = exitButton_2
+	button = script.Parent
+	window = script.Parent.Parent.Parent
+	
+	function onClicked(GUI)
+	 window:remove()
+	end
+	script.Parent.MouseButton1Click:connect(onClicked)
+
+end
+coroutine.resume(coroutine.create(exit_button_script1))
+function loader_drag_script() -- loader.dragScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = loader
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(loader_drag_script))
+function loader_test_hide() -- loader.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = loader
+	local frm = script.Parent
+	frm.Visible = true
+
+end
+coroutine.resume(coroutine.create(loader_test_hide))

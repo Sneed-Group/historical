@@ -1,0 +1,313 @@
+<?php
+	$action = $_POST['action'];
+	
+	//	get featured level list
+	if ($action == 'get_featured') {
+		echo file_get_contents("feat.xml");
+		
+	//	get level data
+	} else if ($action == 'get_record') {
+		$ip_tracking = $_POST['ip_tracking'];		//  676541
+		$level_id = $_POST['level_id'];				//	9931736
+					
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$statement = $db->prepare('SELECT data FROM levels_data WHERE id = :id');
+		$statement->bindValue(':id', $level_id, PDO::PARAM_INT);
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+
+		$data = $result[0]['data'];
+		
+		//$data = file_get_contents('db/lvl/' . $level_id);
+		
+		echo $data;
+	
+	//	get level by id
+	} else if ($action == 'get_level') {
+		$level_id = $_POST['level_id'];				//	9931736
+					
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$statement = $db->prepare('SELECT * FROM levels WHERE id = :id');
+		$statement->bindValue(':id', $level_id, PDO::PARAM_INT);
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		if (empty($result)) {
+			echo '<?xml version="1.0" encoding="UTF-8"?><lvs/>';
+			
+		} else {
+			$lvs = new SimpleXMLElement('<lvs/>');
+			 
+			foreach ($result as $m) {
+				$lv = $lvs->addChild('lv');
+				$lv->addChild('uc', htmlspecialchars($m['uc']));
+				$lv->addAttribute('id', $m['id']);
+				$lv->addAttribute('ln', $m['ln']);
+				$lv->addAttribute('pc', $m['pc']);
+				$lv->addAttribute('ps', $m['ps']);
+				$lv->addAttribute('rg', $m['rg']);
+				$lv->addAttribute('ui', $m['ui']);
+				$lv->addAttribute('un', $m['un']);
+				$lv->addAttribute('vs', $m['vs']);
+				$lv->addAttribute('dp', $m['dp']);
+			  
+			  // Format unix time to timestamp
+			  /*$formatted_time = date('Y-m-d H:i:s', $m['time']);
+			  $stmt->bindValue(':time', $formatted_time, PDO::PARAM_STR);*/
+			}
+			
+			$data = $lvs->asXML();
+			
+			echo $data;		
+		}
+	
+	//	get level list
+	} else if ($action == 'get_all') {
+		$page = $_POST['page'];						//	first is 1
+		$sortby = $_POST['sortby'];					//	oldest, newest, plays, rating
+		$uploaded = $_POST['uploaded'];				//	anytime, month, week, today
+		
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$db->setAttribute(PDO::ATTR_ERRMODE, 
+								PDO::ERRMODE_EXCEPTION);
+		
+		$sqlwhere = getSQLWhere($uploaded);
+		$sqlorder = getSQLOrder($sortby);
+		$offset = 500 * ($page - 1);
+		
+		$format = 'SELECT * FROM levels %s LIMIT 500 OFFSET %d';
+		$query = buildQuery(array($sqlwhere), $sqlorder);
+		$statement = $db->prepare(sprintf($format, $query, $offset));
+		//$statement->bindValue(':un', '%' . $sterm . '%', PDO::PARAM_STR);
+	 
+		$statement->execute();
+		$result = $statement->fetchAll();
+	 
+		$lvs = new SimpleXMLElement('<lvs/>');
+			 
+		foreach ($result as $m) {
+			$lv = $lvs->addChild('lv');
+			$lv->addChild('uc', htmlspecialchars($m['uc']));
+			$lv->addAttribute('id', $m['id']);
+			$lv->addAttribute('ln', $m['ln']);
+			$lv->addAttribute('pc', $m['pc']);
+			$lv->addAttribute('ps', $m['ps']);
+			$lv->addAttribute('rg', $m['rg']);
+			$lv->addAttribute('ui', $m['ui']);
+			$lv->addAttribute('un', $m['un']);
+			$lv->addAttribute('vs', $m['vs']);
+			$lv->addAttribute('dp', $m['dp']);
+		  
+		  // Format unix time to timestamp
+		  /*$formatted_time = date('Y-m-d H:i:s', $m['time']);
+		  $stmt->bindValue(':time', $formatted_time, PDO::PARAM_STR);*/
+		}
+		
+		$data = $lvs->asXML();
+		
+		echo $data;
+		
+	//	list levels by user
+	} else if ($action == 'get_pub_by_user') {
+		$page = $_POST['page'];						//	first is 1
+		$sortby = $_POST['sortby'];					//	oldest, newest, plays, rating
+		$uploaded = $_POST['uploaded'];				//	anytime, month, week, today
+		$user_id = $_POST['user_id'];				//	9654750
+				
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$db->setAttribute(PDO::ATTR_ERRMODE, 
+								PDO::ERRMODE_EXCEPTION);
+		
+		$sqlwhere = getSQLWhere($uploaded);
+		$sqlorder = getSQLOrder($sortby);
+		$offset = 500 * ($page - 1);
+		
+		$format = 'SELECT * FROM levels %s LIMIT 500 OFFSET %d';
+		$query = buildQuery(array("ui = :ui", $sqlwhere), $sqlorder);
+		$statement = $db->prepare(sprintf($format, $query, $offset));
+		$statement->bindValue(':ui', $user_id, PDO::PARAM_INT);
+	 
+		$statement->execute();
+		$result = $statement->fetchAll();
+	 
+		$lvs = new SimpleXMLElement('<lvs/>');
+			 
+		foreach ($result as $m) {
+			$lv = $lvs->addChild('lv');
+			$lv->addChild('uc', htmlspecialchars($m['uc']));
+			$lv->addAttribute('id', $m['id']);
+			$lv->addAttribute('ln', $m['ln']);
+			$lv->addAttribute('pc', $m['pc']);
+			$lv->addAttribute('ps', $m['ps']);
+			$lv->addAttribute('rg', $m['rg']);
+			$lv->addAttribute('ui', $m['ui']);
+			$lv->addAttribute('un', $m['un']);
+			$lv->addAttribute('vs', $m['vs']);
+			$lv->addAttribute('dp', $m['dp']);
+		}
+		
+		$data = $lvs->asXML();
+		
+		echo $data;
+		
+	//	search levels by string
+	} else if ($action == 'search_by_name') {
+		$page = $_POST['page'];						//	first is 1
+		$sortby = $_POST['sortby'];					//	oldest, newest, plays, rating
+		$uploaded = $_POST['uploaded'];				//	anytime, month, week, today
+		$sterm = $_POST['sterm'];					//	search query string
+		
+		// Create (connect to) SQLite database in file
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$db->setAttribute(PDO::ATTR_ERRMODE, 
+								PDO::ERRMODE_EXCEPTION);
+		
+		$sqlwhere = getSQLWhere($uploaded);
+		$sqlorder = getSQLOrder($sortby);
+		$offset = 500 * ($page - 1);
+		
+		$format = 'SELECT * FROM levels %s LIMIT 500 OFFSET %d';
+		$query = buildQuery(array("ln like :ln", $sqlwhere), $sqlorder);
+		$statement = $db->prepare(sprintf($format, $query, $offset));
+		$statement->bindValue(':ln', '%' . $sterm . '%', PDO::PARAM_STR);
+	 
+		$statement->execute();
+		$result = $statement->fetchAll();
+	 
+		$lvs = new SimpleXMLElement('<lvs/>');
+
+		foreach ($result as $m) {
+			$lv = $lvs->addChild('lv');
+			$lv->addChild('uc', htmlspecialchars($m['uc']));
+			$lv->addAttribute('id', $m['id']);
+			$lv->addAttribute('ln', $m['ln']);
+			$lv->addAttribute('pc', $m['pc']);
+			$lv->addAttribute('ps', $m['ps']);
+			$lv->addAttribute('rg', $m['rg']);
+			$lv->addAttribute('ui', $m['ui']);
+			$lv->addAttribute('un', $m['un']);
+			$lv->addAttribute('vs', $m['vs']);
+			$lv->addAttribute('dp', $m['dp']);
+		  
+		  // Format unix time to timestamp
+		  /*$formatted_time = date('Y-m-d H:i:s', $m['time']);
+		  $stmt->bindValue(':time', $formatted_time, PDO::PARAM_STR);*/
+		}
+		
+		$data = $lvs->asXML();
+		
+		echo $data;
+		
+	} else if ($action == 'search_by_user') {
+		$page = $_POST['page'];						//	first is 1
+		$sortby = $_POST['sortby'];					//	oldest, newest, plays, rating
+		$uploaded = $_POST['uploaded'];				//	anytime, month, week, today
+		$sterm = $_POST['sterm'];					//	search query string
+		
+		// Create (connect to) SQLite database in file
+		$db = new PDO('sqlite:happywheels.sqlite3');
+		
+		$db->setAttribute(PDO::ATTR_ERRMODE, 
+								PDO::ERRMODE_EXCEPTION);
+		
+		$sqlwhere = getSQLWhere($uploaded);
+		$sqlorder = getSQLOrder($sortby);
+		$offset = 500 * ($page - 1);
+		
+		$format = 'SELECT * FROM levels %s LIMIT 500 OFFSET %d';
+		$query = buildQuery(array("un like :un", $sqlwhere), $sqlorder);
+		$statement = $db->prepare(sprintf($format, $query, $offset));
+		$statement->bindValue(':un', '%' . $sterm . '%', PDO::PARAM_STR);
+	 
+		$statement->execute();
+		$result = $statement->fetchAll();
+	 
+		$lvs = new SimpleXMLElement('<lvs/>');
+			 
+		foreach ($result as $m) {
+			$lv = $lvs->addChild('lv');
+			$lv->addChild('uc', htmlspecialchars($m['uc']));
+			$lv->addAttribute('id', $m['id']);
+			$lv->addAttribute('ln', $m['ln']);
+			$lv->addAttribute('pc', $m['pc']);
+			$lv->addAttribute('ps', $m['ps']);
+			$lv->addAttribute('rg', $m['rg']);
+			$lv->addAttribute('ui', $m['ui']);
+			$lv->addAttribute('un', $m['un']);
+			$lv->addAttribute('vs', $m['vs']);
+			$lv->addAttribute('dp', $m['dp']);
+		  
+		  // Format unix time to timestamp
+		  /*$formatted_time = date('Y-m-d H:i:s', $m['time']);
+		  $stmt->bindValue(':time', $formatted_time, PDO::PARAM_STR);*/
+		}
+		
+		$data = $lvs->asXML();
+		
+		echo $data;
+	}
+	
+	function buildQuery(array $conditions, $order) {
+		// Remove empty conditions
+		$conditions = array_filter($conditions, 'strlen');
+		$query;
+		if (empty($conditions)) {
+			$query = "";
+		} else {
+			$query = "WHERE ";
+			$i = 0;
+			foreach ($conditions as $cond) {
+				if ($i > 0) {
+					$query .= " AND ";
+				}
+				$query .= $cond;
+				$i++;
+			}
+		}
+		return $query . " ORDER BY " . $order;
+	}
+	
+	function getSQLWhere($uploaded) {
+		$sqlwhere;
+		switch ($uploaded) {
+			case 'anytime':
+				$sqlwhere = "";
+				break;
+			case 'month':
+				$sqlwhere = "julianday() - julianday(dp) < 30";
+				break;
+			case 'week':
+				$sqlwhere = "julianday() - julianday(dp) < 7";
+				break;
+			case 'today':
+				$sqlwhere = "julianday() - julianday(dp) < 1";
+				break;
+		}
+		return $sqlwhere;
+	}
+	
+	function getSQLOrder($sortby) {
+		$sqlorder;
+		switch ($sortby) {
+			case 'oldest':
+				$sqlorder = "date(dp) ASC";
+				break;
+			case 'newest':
+				$sqlorder = "date(dp) DESC";
+				break;
+			case 'plays':
+				$sqlorder = "ps DESC";
+				break;
+			case 'rating':
+				$sqlorder = "rg DESC";
+				break;
+		}
+		return $sqlorder;
+	}

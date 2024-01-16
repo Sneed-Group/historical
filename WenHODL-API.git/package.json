@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bitcore-lib": "^8.25.25",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.1",
+    "gun": "^0.2020.1235"
+  },
+  "name": "wenhodl-api",
+  "version": "1.0.0",
+  "description": "WenHODL client (peer) backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparksammy/SparkyCoin-API.git"
+  },
+  "author": "Samuel Lord",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparksammy/SparkyCoin-API/issues"
+  },
+  "homepage": "https://github.com/sparksammy/SparkyCoin-API#readme"
+}

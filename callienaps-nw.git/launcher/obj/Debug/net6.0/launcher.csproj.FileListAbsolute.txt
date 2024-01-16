@@ -1,0 +1,5 @@
+/home/kelpy/callienaps-nw/launcher/obj/Debug/net6.0/launcher.csproj.AssemblyReference.cache
+/home/kelpy/callienaps-nw/launcher/obj/Debug/net6.0/launcher.GeneratedMSBuildEditorConfig.editorconfig
+/home/kelpy/callienaps-nw/launcher/obj/Debug/net6.0/launcher.AssemblyInfoInputs.cache
+/home/kelpy/callienaps-nw/launcher/obj/Debug/net6.0/launcher.AssemblyInfo.cs
+/home/kelpy/callienaps-nw/launcher/obj/Debug/net6.0/launcher.csproj.CoreCompileInputs.cache

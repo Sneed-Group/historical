@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Picture Gallery</title>
+
+
+</head>
+
+
+<body>
+<h1>My Pictures</h1>
+<p style="text-align: center;"><img style="margin-top: 112px;" src="bb.gif" alt="Image result for baby dancing gif" width="45%" height="80%" /></p>
+<p style="text-align: center;">&nbsp;<img src="pika.gif" alt="pika-cons1" width="30%" height="46%" /><img src="pika.gif" alt="pika-cons1" width="30%" height="46%" /><img src="pika.gif" alt="pika-cons1" width="30%" height="46%" />&nbsp;</p>
+<p style="text-align: center;"><img src="idc.gif" alt="IDC LOL" width="45%" height="80%" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="spam.gif" alt="Who gives a Spam?" width="80%" height="45%" /></p>
+<p><img style="margin-top: 126px; display: block; margin-left: auto; margin-right: auto;" src="blessed.gif" alt="Image result for geocities gif" width="80%" height="45%" /></p>
+<p><img style="margin-top: 83px; display: block; margin-left: auto; margin-right: auto;" src="funny-error1.jpg" alt="Related image" width="80%" height="65%" /></p>
+<p style="text-align: center;"><img style="margin-top: 97px;" src="funny-error2.gif" alt="Image result for geocities gif" width="80%" height="65%" /></p>
+<p style="text-align: center;"><a href="home.html">Back to home page.</a></p>
+</body>
+</html>

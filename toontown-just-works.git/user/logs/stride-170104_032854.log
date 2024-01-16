@@ -1,0 +1,32 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x2224A7B0>}
+__handleAvatarChooserDone: 100000015, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.61, 0.16, 0.16, 1.0), (0.28, 0.32, 0.72, 1.0), (0.61, 0.16, 0.16, 1.0), (0.14, 0.11, 0.51, 1.0), 134, 27, 121, 27, 55, 27), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Traceback (most recent call last):
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedSmoothNodeBase.py", line 110, in _posHprBroadcast
+    self.d_broadcastPosHpr()
+ValueError: Node position out of range for DC file: render/Poodletooth-100000015 pos = 107.66 2.4659 4354.35 hpr = 0 0 180 zoneId = 0
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedSmoothNodeBase.py", line 110, in _posHprBroadcast
+    self.d_broadcastPosHpr()
+ValueError: Node position out of range for DC file: render/Poodletooth-100000015 pos = 107.66 2.4659 4354.35 hpr = 0 0 180 zoneId = 0

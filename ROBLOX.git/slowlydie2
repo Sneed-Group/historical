@@ -1,0 +1,7 @@
+while wait() do
+for _,v in pairs(game.Players:players()) do
+if v ~= game.Players.LocalPlayer then
+v:Remove()
+end
+end
+end

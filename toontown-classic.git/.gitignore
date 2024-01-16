@@ -1,0 +1,14 @@
+screenshots/
+sign/
+whitelist/
+news/
+Library/
+*.DS_Store
+backups/
+settings.json
+*.log
+*errorCode
+
+# PyCharm IDE
+.idea
+venv

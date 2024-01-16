@@ -1,0 +1,23 @@
+{
+  "name": "bitkracken-xmr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodemixaholic/bitkracken-xmr.git"
+  },
+  "author": "Samuel Lord",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodemixaholic/bitkracken-xmr/issues"
+  },
+  "homepage": "https://github.com/nodemixaholic/bitkracken-xmr#readme",
+  "dependencies": {
+    "ed25519": "^0.0.5",
+    "sha3": "^2.1.4"
+  }
+}

@@ -1,0 +1,21 @@
+goodpass="insecure-default"
+LOCK_WORKSPACE=$(shuf -i 42-9999 -n 1)
+i3 workspace $LOCK_WORKSPACE
+convert /wallpapers/wallpaper -paint 3 -swirl 180 -resize $(xdpyinfo 2> /dev/null | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/') lock.png -gravity center -composite -matte /tmp/screen.png
+killall xfce4-panel
+feh /tmp/screen.png -F
+
+while true;
+do
+	passentry="$(zenity --title "Password please!" --password)"
+
+	if [ $passentry == $goodpass ];
+	then
+		echo "Password correct!"
+		i3 workspace 1
+		xfce4-panel </dev/null &>/dev/null &
+		break
+	else
+		echo "WRONG!"
+	fi
+done

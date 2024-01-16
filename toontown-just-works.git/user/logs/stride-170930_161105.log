@@ -1,0 +1,193 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x14F927D8>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.47, 0.44, 0.44, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+gardenPage Unloading
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x14F927D8>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.47, 0.44, 0.44, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_OZ.pdna
+Reading DNA file... phase_6/dna/storage_OZ_sz.pdna
+Reading DNA file... phase_6/dna/outdoor_zone_sz.pdna
+TIMER startTime 490
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_13/dna/storage_party_sz.pdna
+Reading DNA file... phase_13/dna/party_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_OZ.pdna
+Reading DNA file... phase_6/dna/storage_OZ_sz.pdna
+Reading DNA file... phase_6/dna/outdoor_zone_sz.pdna
+TIMER startTime 490
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_GZ.pdna
+Reading DNA file... phase_6/dna/storage_GZ_sz.pdna
+Reading DNA file... phase_6/dna/golf_zone_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+recording limit passed comObj
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+Warning: NodePath.remove() is deprecated.  Use remove_node() instead.
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_GS.pdna
+Reading DNA file... phase_6/dna/storage_GS_sz.pdna
+Reading DNA file... phase_6/dna/goofy_speedway_sz.pdna
+Traceback (most recent call last):
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 52, in eventLoopTask
+    self.doEvents()
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 46, in doEvents
+    processFunc(self.eventQueue.dequeueEvent())
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 103, in processEvent
+    messenger.send(eventName, paramList)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "C:\Panda3D-1.10.0\direct\showbase\ShowBase.py", line 2665, in windowEvent
+    self.userExit()
+  File "toontown\toonbase\ToonBase.py", line 400, in userExit
+    self.cr.dumpAllSubShardObjects()
+  File "toontown\distributed\ToontownClientRepository.py", line 556, in dumpAllSubShardObjects
+    self.deleteObject(doId)
+  File "toontown\distributed\ToontownClientRepository.py", line 906, in deleteObject
+    obj.deleteOrDelay()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 199, in deleteOrDelay
+    self.disableAnnounceAndDelete()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 202, in disableAnnounceAndDelete
+    self.disableAndAnnounce()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 228, in disableAndAnnounce
+    self.disable()
+  File "toontown\racing\DistributedStartingBlock.py", line 66, in disable
+    self.setOccupied(0)
+  File "toontown\racing\DistributedStartingBlock.py", line 238, in setOccupied
+    self.kart.delete()
+  File "toontown\racing\Kart.py", line 47, in delete
+    self.kartLoopSfx.stop()
+AttributeError: 'Kart' object has no attribute 'kartLoopSfx'
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 52, in eventLoopTask
+    self.doEvents()
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 46, in doEvents
+    processFunc(self.eventQueue.dequeueEvent())
+  File "C:\Panda3D-1.10.0\direct\showbase\EventManager.py", line 103, in processEvent
+    messenger.send(eventName, paramList)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "C:\Panda3D-1.10.0\direct\showbase\ShowBase.py", line 2665, in windowEvent
+    self.userExit()
+  File "toontown\toonbase\ToonBase.py", line 400, in userExit
+    self.cr.dumpAllSubShardObjects()
+  File "toontown\distributed\ToontownClientRepository.py", line 556, in dumpAllSubShardObjects
+    self.deleteObject(doId)
+  File "toontown\distributed\ToontownClientRepository.py", line 906, in deleteObject
+    obj.deleteOrDelay()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 199, in deleteOrDelay
+    self.disableAnnounceAndDelete()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 202, in disableAnnounceAndDelete
+    self.disableAndAnnounce()
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 228, in disableAndAnnounce
+    self.disable()
+  File "toontown\racing\DistributedStartingBlock.py", line 66, in disable
+    self.setOccupied(0)
+  File "toontown\racing\DistributedStartingBlock.py", line 238, in setOccupied
+    self.kart.delete()
+  File "toontown\racing\Kart.py", line 47, in delete
+    self.kartLoopSfx.stop()
+AttributeError: 'Kart' object has no attribute 'kartLoopSfx'

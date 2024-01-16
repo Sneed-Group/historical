@@ -1,0 +1,12 @@
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\bin\Debug\net5.0\GEMSNT.deps.json
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\bin\Debug\net5.0\GEMSNT.dll
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\bin\Debug\net5.0\ref\GEMSNT.dll
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\bin\Debug\net5.0\GEMSNT.pdb
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.csproj.AssemblyReference.cache
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.AssemblyInfoInputs.cache
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.AssemblyInfo.cs
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.csproj.CoreCompileInputs.cache
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.dll
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\ref\GEMSNT.dll
+C:\Users\stitc\source\repos\GEMSNT\GEMSNT\obj\Debug\net5.0\GEMSNT.pdb

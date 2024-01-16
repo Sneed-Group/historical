@@ -1,0 +1,74 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x2224A7B0>}
+__handleAvatarChooserDone: 100000015, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.61, 0.16, 0.16, 1.0), (0.28, 0.32, 0.72, 1.0), (0.61, 0.16, 0.16, 1.0), (0.14, 0.11, 0.51, 1.0), 134, 27, 121, 27, 55, 27), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1
+    base.localAvatar.b_setAnimState, ['victory', -3]
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\LocalToon.py", line 1557, in b_setAnimState
+    DistributedToon.DistributedToon.b_setAnimState(self, animName, animMultiplier, callback, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 717, in b_setAnimState
+    self.d_setAnimState(animName, animMultiplier, None, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 723, in d_setAnimState
+    self.sendUpdate('setAnimState', [animName, animMultiplier, timestamp])
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+ValueError: Value out of range on field: setAnimState[('Victory', -3), 1.0, -30398]
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\LocalToon.py", line 1557, in b_setAnimState
+    DistributedToon.DistributedToon.b_setAnimState(self, animName, animMultiplier, callback, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 717, in b_setAnimState
+    self.d_setAnimState(animName, animMultiplier, None, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 723, in d_setAnimState
+    self.sendUpdate('setAnimState', [animName, animMultiplier, timestamp])
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+ValueError: Value out of range on field: setAnimState[('Victory', -3), 1.0, -30331]
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\LocalToon.py", line 1557, in b_setAnimState
+    DistributedToon.DistributedToon.b_setAnimState(self, animName, animMultiplier, callback, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 717, in b_setAnimState
+    self.d_setAnimState(animName, animMultiplier, None, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 723, in d_setAnimState
+    self.sendUpdate('setAnimState', [animName, animMultiplier, timestamp])
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+ValueError: Value out of range on field: setAnimState[('Victory', 3), 1.0, -29806]
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\LocalToon.py", line 1557, in b_setAnimState
+    DistributedToon.DistributedToon.b_setAnimState(self, animName, animMultiplier, callback, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 717, in b_setAnimState
+    self.d_setAnimState(animName, animMultiplier, None, extraArgs)
+  File "toontown\toon\DistributedToon.py", line 723, in d_setAnimState
+    self.sendUpdate('setAnimState', [animName, animMultiplier, timestamp])
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+ValueError: Value out of range on field: setAnimState[('swim', 3), 1.0, -28269]
+gardenPage Unloading

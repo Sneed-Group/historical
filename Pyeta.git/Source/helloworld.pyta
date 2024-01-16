@@ -1,0 +1,12 @@
+include sleep from time #include test
+native-include plat #native include test
+group Main() {
+  role onRun() {
+    # A slightly more advanced "Hello world" program.
+    console.writeLine("Hello World. This is the included test app");
+    print("This lang doesn't require semicolons and can have python3 syntax mixed in!")
+    console.writeLine("Running on a " + platform.system() + " computer.") #test if native-include worked
+    console.writeLine("Exiting in 5 seconds"); #test if include worked
+    sleep(5)
+  }
+}

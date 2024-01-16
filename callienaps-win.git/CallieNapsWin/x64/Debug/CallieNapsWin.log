@@ -1,0 +1,41 @@
+﻿  dllmain.cpp
+C:\Users\stitc\source\repos\callienaps-win\proto.h(34,1): warning C4005: 'LUA_TNONE': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(72): message : see previous definition of 'LUA_TNONE'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(36,1): warning C4005: 'LUA_TLIGHTUSERDATA': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(76): message : see previous definition of 'LUA_TLIGHTUSERDATA'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(37,1): warning C4005: 'LUA_TNUMBER': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(77): message : see previous definition of 'LUA_TNUMBER'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(38,1): warning C4005: 'LUA_TBOOLEAN': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(75): message : see previous definition of 'LUA_TBOOLEAN'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(40,1): warning C4005: 'LUA_TTHREAD': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(82): message : see previous definition of 'LUA_TTHREAD'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(42,1): warning C4005: 'LUA_TTABLE': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(79): message : see previous definition of 'LUA_TTABLE'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(43,1): warning C4005: 'LUA_TUSERDATA': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lua.h(81): message : see previous definition of 'LUA_TUSERDATA'
+C:\Users\stitc\source\repos\callienaps-win\proto.h(44,1): warning C4005: 'LUA_TPROTO': macro redefinition
+C:\Users\stitc\source\repos\callienaps-win\Lua\lobject.h(28): message : see previous definition of 'LUA_TPROTO'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(4,40): warning C4312: '<function-style-cast>': conversion from 'int' to 'PDWORD' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(7,27): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(13,36): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(13,15): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(19,27): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(21,26): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(21,26): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(24,6): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(25,21): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(27,31): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(27,31): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(29,8): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(31,49): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(31,49): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(32,49): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(37,29): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(43,35): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(43,35): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(48,30): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(48,30): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(55,21): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(55,21): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\stitc\source\repos\callienaps-win\Bypass\bypass.h(70,31): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+  CallieNapsWin.vcxproj -> C:\Users\stitc\Source\Repos\callienaps-win\x64\Debug\CallieNapsWin.dll

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+        <div id="oper"></div>
+        <div id="vid"></div>
+    <script>
+      //OzolioCamEmbed
+      //A NodeMixaholic FOSS Project
+      //This script tag and HTML file licensed under MIT license.
+      
+  const debugMode = false 
+      let cidOidVar = "CID_KPIK000004AD" //put the CID of your ozolio webcam here!
+      let sidGen = `https://relay.ozolio.com/ses.api?cmd=init&oid=${cidOidVar}&ver=5&channel=0&control=1&document=https%3A%2F%2Fwww.galveston.com%2Fwebcams%2Fmarinavideocam%2F`
+      let sid = ""
+      async function fetchJSON(url) {
+        const response = await fetch(url);
+        const json = await response.json();
+        return json
+  }
+
+    async function main() {
+    let json = await fetchJSON(sidGen)
+    if (debugMode) {
+        console.log(json)
+          console.log(JSON.stringify(json.session.id))
+    }
+    sid = JSON.stringify(json.session.id)
+
+    let mainUrl = `https://relay.ozolio.com/ses.api?cmd=open&oid=${sid}&output=1&format=M3U8&profile=AUTO`;
+
+    let json2 = await fetchJSON(mainUrl)
+    let finalM3U = JSON.stringify(json2.output.source).replaceAll('"',"")
+    if (debugMode) {
+        console.log(json2)
+        console.log(finalM3U)
+    }
+
+    document.title = JSON.stringify(json2.output.name).replaceAll('"',"")
+    player = new Clappr.Player({
+         source: `${finalM3U}`,
+         mimeType: "application/x-mpegURL",
+         autoPlay: true, 
+         height: 400,
+         width: "100%",
+         plugins: {"core": [LevelSelector]}, 
+         parentId: "#vid"});
+}
+
+main()
+
+
+
+    </script>
+  </body>
+</html>

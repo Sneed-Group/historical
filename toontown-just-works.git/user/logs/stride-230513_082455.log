@@ -1,0 +1,50 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1B32A7B0>}
+__handleAvatarChooserDone: 100000025, 'Golden Slumberer', ('rll', 'ls', 'l', 'm', (0.75, 0.57, 0.18, 1.0), (0.93, 0.26, 0.28, 1.0), (0.75, 0.57, 0.18, 1.0), (0.75, 0.57, 0.18, 1.0), 4, 1, 4, 1, 7, 15), 4
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_13/dna/storage_party_sz.pdna
+Reading DNA file... phase_13/dna/party_sz.pdna
+Traceback (most recent call last):
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 720, in _checkFlyingToonCollision
+    self.__handleFlyingToonCollision(activeEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 773, in __handleFlyingToonCollision
+    self.__hitCloudPlatform(self.localFlyingToon, collisionEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 923, in __hitCloudPlatform
+    self.d_requestCloudHit(cloudNumber, base.localAvatar.style.getHeadColor())
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 904, in d_requestCloudHit
+    self.sendUpdate('requestCloudHit', a)
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+TypeError: Incorrect arguments to field: requestCloudHit[703, (0.75, 0.57, 0.18, 1.0)]
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 720, in _checkFlyingToonCollision
+    self.__handleFlyingToonCollision(activeEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 773, in __handleFlyingToonCollision
+    self.__hitCloudPlatform(self.localFlyingToon, collisionEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 923, in __hitCloudPlatform
+    self.d_requestCloudHit(cloudNumber, base.localAvatar.style.getHeadColor())
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 904, in d_requestCloudHit
+    self.sendUpdate('requestCloudHit', a)
+  File "C:\Panda3D-1.10.0\direct\distributed\DistributedObject.py", line 359, in sendUpdate
+    fieldName, sendToId or self.doId, args)
+TypeError: Incorrect arguments to field: requestCloudHit[703, (0.75, 0.57, 0.18, 1.0)]

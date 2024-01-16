@@ -1,0 +1,2 @@
+[Command]
+Logout=killall i3

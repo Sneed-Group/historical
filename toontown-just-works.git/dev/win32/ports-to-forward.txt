@@ -1,0 +1,12 @@
+IP:
+192.168.1.42
+
+
+Ports:
+7100 - Astron
+7198 - Event Logger/Uberdog
+7199 - Client Agent
+27017 - DB
+
+Tcp or Udp?
+BOTH

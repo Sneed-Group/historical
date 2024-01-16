@@ -1,0 +1,27 @@
+--Sparksammy's Funnny Character Script
+game.Players.LocalPlayer.Character.Head.Mesh:Destroy()
+game.Players.LocalPlayer.Character.Head:FindFirstChildOfClass("Decal"):Destroy()
+game.Players.LocalPlayer.Character["Left Arm"]:Destroy()
+game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+
+repeat
+AnimationId = "121572214"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.2)
+wait(.075)
+k:AdjustSpeed(1.6)
+wait(.1)
+k:AdjustSpeed(4.6)
+wait(.2)
+local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+local ActiveTracks = Humanoid:GetPlayingAnimationTracks()
+
+for _,v in pairs(ActiveTracks)
+do v:Stop()
+end
+wait()
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0

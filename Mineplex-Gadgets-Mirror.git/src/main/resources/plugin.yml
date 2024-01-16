@@ -1,0 +1,11 @@
+main: me.redraskaldoesgaming.MineplexGadgets.MineplexGadgets
+name: MineplexGadgets
+version: 1.0
+
+commands:
+  gadget:
+    description: The main Mineplex Gadgets command
+
+permissions:
+  Gadget.Use:
+    default: op

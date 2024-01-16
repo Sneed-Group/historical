@@ -1,0 +1,13 @@
+include-panda3d-basics
+group Main() {
+  role onRun() {
+    # An even more advanced "Hello world" program.
+    console.writeLine("Hello World. This is the included Panda3d test app");
+    ## We don't have a model, so we cannot load it in.
+    # model = pandaLoadModel("")
+    # model.pandaDestroy()
+    # model.p3d.parentToRender()
+    pandaCore.runPandaApp();
+    
+  }
+}

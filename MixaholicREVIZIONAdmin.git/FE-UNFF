@@ -1,0 +1,8 @@
+FF = false
+wait()
+xos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(4.85)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+workspace.CurrentCamera.CameraType = Enum.CameraType.Track
+wait(.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = xos

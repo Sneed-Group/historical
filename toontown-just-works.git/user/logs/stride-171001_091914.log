@@ -1,0 +1,122 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x14F937D8>}
+__handleAvatarChooserDone: 100000015, 'Weird', ('hll', 'ls', 'l', 'm', (0.3, 0.3, 0.35, 1.0), (1.0, 1.0, 1.0, 1.0), (0.3, 0.3, 0.35, 1.0), (0.3, 0.3, 0.35, 1.0), 9, 11, 9, 11, 7, 9), 4
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x14F937D8>}
+__handleAvatarChooserDone: 100000015, 'Weird', ('hll', 'ls', 'l', 'm', (0.3, 0.3, 0.35, 1.0), (1.0, 1.0, 1.0, 1.0), (0.3, 0.3, 0.35, 1.0), (0.3, 0.3, 0.35, 1.0), 9, 11, 9, 11, 7, 9), 4
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.47, 0.44, 0.44, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+avid: 100000010, gender: m
+current hat = (6, 0, 0), glasses = (0, 0, 0), backpack = (0, 0, 0), shoes = (2, 8, 0)
+hatList = [6, 0, 0, 9, 0, 0]
+glassesList = [8, 0, 0]
+backpackList = [11, 0, 0]
+shoesList = [1, 1, 0, 2, 8, 0]
+avid: 100000010, gender: m
+current hat = (6, 0, 0), glasses = (8, 0, 0), backpack = (0, 0, 0), shoes = (2, 8, 0)
+hatList = [6, 0, 0, 9, 0, 0]
+glassesList = [8, 0, 0]
+backpackList = [11, 0, 0]
+shoesList = [1, 1, 0, 2, 8, 0]
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_MM.pdna
+Reading DNA file... phase_6/dna/storage_MM_sz.pdna
+Reading DNA file... phase_6/dna/minnies_melody_land_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_BR.pdna
+Reading DNA file... phase_8/dna/storage_BR_sz.pdna
+Reading DNA file... phase_8/dna/the_burrrgh_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Traceback (most recent call last):
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1164, in handleMessageType
+    self.gotInterestDoneMessage(di)
+  File "otp\distributed\OTPClientRepository.py", line 1188, in gotInterestDoneMessage
+    self.__playBackGenerates(handle)
+  File "otp\distributed\OTPClientRepository.py", line 1300, in __playBackGenerates
+    self.__doGenerate(doId, parentId, zoneId, classId, di, other)
+  File "otp\distributed\OTPClientRepository.py", line 1346, in __doGenerate
+    self.generateWithRequiredFields(dclass, doId, di, parentId, zoneId)
+  File "C:\Panda3D-1.10.0\direct\distributed\ClientRepositoryBase.py", line 263, in generateWithRequiredFields
+    distObj.generate()
+  File "toontown\safezone\DistributedPartyGate.py", line 40, in generate
+    partyGate = loader.geom.find('**/partyGate_grp')
+AttributeError: 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1164, in handleMessageType
+    self.gotInterestDoneMessage(di)
+  File "otp\distributed\OTPClientRepository.py", line 1188, in gotInterestDoneMessage
+    self.__playBackGenerates(handle)
+  File "otp\distributed\OTPClientRepository.py", line 1300, in __playBackGenerates
+    self.__doGenerate(doId, parentId, zoneId, classId, di, other)
+  File "otp\distributed\OTPClientRepository.py", line 1346, in __doGenerate
+    self.generateWithRequiredFields(dclass, doId, di, parentId, zoneId)
+  File "C:\Panda3D-1.10.0\direct\distributed\ClientRepositoryBase.py", line 263, in generateWithRequiredFields
+    distObj.generate()
+  File "toontown\safezone\DistributedPartyGate.py", line 40, in generate
+    partyGate = loader.geom.find('**/partyGate_grp')
+AttributeError: 'NoneType' object has no attribute 'find'

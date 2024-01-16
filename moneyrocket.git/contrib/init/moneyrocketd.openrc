@@ -1,0 +1,93 @@
+#!/sbin/openrc-run
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/moneyrocket/.moneyrocket" ]; then
+	MONEYROCKETD_DEFAULT_DATADIR="/var/lib/moneyrocket/.moneyrocket"
+else
+	MONEYROCKETD_DEFAULT_DATADIR="/var/lib/moneyrocketd"
+fi
+
+MONEYROCKETD_CONFIGFILE=${MONEYROCKETD_CONFIGFILE:-/etc/moneyrocket/moneyrocket.conf}
+MONEYROCKETD_PIDDIR=${MONEYROCKETD_PIDDIR:-/var/run/moneyrocketd}
+MONEYROCKETD_PIDFILE=${MONEYROCKETD_PIDFILE:-${MONEYROCKETD_PIDDIR}/moneyrocketd.pid}
+MONEYROCKETD_DATADIR=${MONEYROCKETD_DATADIR:-${MONEYROCKETD_DEFAULT_DATADIR}}
+MONEYROCKETD_USER=${MONEYROCKETD_USER:-${MONEYROCKET_USER:-moneyrocket}}
+MONEYROCKETD_GROUP=${MONEYROCKETD_GROUP:-moneyrocket}
+MONEYROCKETD_BIN=${MONEYROCKETD_BIN:-/usr/bin/moneyrocketd}
+MONEYROCKETD_NICE=${MONEYROCKETD_NICE:-${NICELEVEL:-0}}
+MONEYROCKETD_OPTS="${MONEYROCKETD_OPTS:-${MONEYROCKET_OPTS}}"
+
+name="Moneyrocket Core Daemon"
+description="Moneyrocket cryptocurrency P2P network daemon"
+
+command="/usr/bin/moneyrocketd"
+command_args="-pid=\"${MONEYROCKETD_PIDFILE}\" \
+		-conf=\"${MONEYROCKETD_CONFIGFILE}\" \
+		-datadir=\"${MONEYROCKETD_DATADIR}\" \
+		-daemon \
+		${MONEYROCKETD_OPTS}"
+
+required_files="${MONEYROCKETD_CONFIGFILE}"
+start_stop_daemon_args="-u ${MONEYROCKETD_USER} \
+			-N ${MONEYROCKETD_NICE} -w 2000"
+pidfile="${MONEYROCKETD_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${MONEYROCKETD_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${MONEYROCKETD_USER}:${MONEYROCKETD_GROUP}" \
+	"${MONEYROCKETD_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${MONEYROCKETD_USER}:${MONEYROCKETD_GROUP}" \
+	"${MONEYROCKETD_PIDDIR}"
+
+	checkpath -f \
+	-o "${MONEYROCKETD_USER}:${MONEYROCKETD_GROUP}" \
+	-m 0660 \
+	"${MONEYROCKETD_CONFIGFILE}"
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if grep -qs '^rpcuser=' "${MONEYROCKETD_CONFIGFILE}" && \
+		! grep -qs '^rpcpassword=' "${MONEYROCKETD_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run moneyrocketd."
+		eerror "The setting must appear in ${MONEYROCKETD_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following "
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Moneyrocket Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}

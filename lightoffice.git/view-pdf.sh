@@ -1,0 +1,3 @@
+echo DISPLAYING FILE IN MUPDF...
+mupdf $1.pdf
+echo "Have a nice day, from NodeMixaholic!"

@@ -1,0 +1,19 @@
+echo ==SPECFETCH OUTPUT FOR $(hostname)==
+echo SATA Disk Info:
+sudo fdisk -l | grep "/dev/sd"
+echo ---
+echo NVME Disk Info:
+sudo fdisk -l | grep "/dev/nvme"
+echo ---
+echo Memory Info:
+cat /proc/meminfo
+echo ---
+echo Memory TLDR:
+free
+echo ---
+echo CPU Info:
+cat /proc/cpuinfo
+echo ---
+echo GPU Info: 
+lspci -nn | grep "VGA"
+echo ==END OF SPEC LIST==

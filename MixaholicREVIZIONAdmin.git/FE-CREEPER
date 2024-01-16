@@ -1,0 +1,20 @@
+game.Players.LocalPlayer.Character["Left Arm"]:Remove()
+game.Players.LocalPlayer.Character["Right Arm"]:Remove()
+if game.Players.LocalPlayer.Character.CharacterMesh then
+game.Players.LocalPlayer.Character.CharacterMesh:Destroy()
+else
+end
+game.Players.LocalPlayer.Character.Head.Mesh:Destroy()
+if game.Players.LocalPlayer.Character.Shirt then
+game.Players.LocalPlayer.Character.Shirt:Destroy()
+else
+end
+if game.Players.LocalPlayer.Character.Pants then
+game.Players.LocalPlayer.Character.Pants:Destroy()
+else
+end
+if game.Players.LocalPlayer.Character["Shirt Graphic"] then
+game.Players.LocalPlayer.Character["Shirt Graphic"]:Destroy()
+else
+end
+game.Players.LocalPlayer.Character.Humanoid:RemoveAccessories()

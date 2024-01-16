@@ -1,0 +1,10 @@
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer.Character
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if (v:IsA("Tool")) then
+v.Parent = workspace.Terrain
+end
+end

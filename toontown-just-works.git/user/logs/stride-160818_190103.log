@@ -1,0 +1,105 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x2224AB48>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.3, 0.3, 0.35, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_OZ.pdna
+Reading DNA file... phase_6/dna/storage_OZ_sz.pdna
+Reading DNA file... phase_6/dna/outdoor_zone_sz.pdna
+TIMER startTime 1520
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+SET TABLE STATE
+ GETTING 2 None 0
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 31, in <module>
+  File "C:\Panda3D-1.10.0\direct\actor\Actor.py", line 277, in __init__
+    self.loadModel(models, copy = copy, okMissing = okMissing)
+  File "C:\Panda3D-1.10.0\direct\actor\Actor.py", line 1905, in loadModel
+    model = loader.loadModel(modelPath, loaderOptions = loaderOptions, okMissing = okMissing)
+  File "toontown\toonbase\ToontownLoader.py", line 72, in loadModel
+    ret = Loader.Loader.loadModel(self, *args, **kw)
+  File "C:\Panda3D-1.10.0\direct\showbase\Loader.py", line 170, in loadModel
+    raise IOError, message
+IOError: Could not load model file(s): ['phase_3/models/char/mickey-1200.bam']
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 7, in <module>
+  File "C:\Panda3D-1.10.0\direct\actor\Actor.py", line 263, in __init__
+    copy = copy, okMissing = okMissing)
+  File "C:\Panda3D-1.10.0\direct\actor\Actor.py", line 1905, in loadModel
+    model = loader.loadModel(modelPath, loaderOptions = loaderOptions, okMissing = okMissing)
+  File "toontown\toonbase\ToontownLoader.py", line 72, in loadModel
+    ret = Loader.Loader.loadModel(self, *args, **kw)
+  File "C:\Panda3D-1.10.0\direct\showbase\Loader.py", line 170, in loadModel
+    raise IOError, message
+IOError: Could not load model file(s): ['phase_3/models/char/dogMM_Shorts-legs-1000.bam']
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 235, in <module>
+NameError: name 'cheese1' is not defined
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+gardenPage Unloading
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.3, 0.3, 0.35, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1
+    messenger.send.('gardenGame')
+                   ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\sparksammy\Documents\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+AttributeError: TTTalkAssistant instance has no attribute 'sendTalk'
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+gardenPage Unloading

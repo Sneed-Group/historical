@@ -1,0 +1,156 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x22263850>}
+__handleAvatarChooserDone: 100000015, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.61, 0.16, 0.16, 1.0), (0.28, 0.32, 0.72, 1.0), (0.61, 0.16, 0.16, 1.0), (0.14, 0.11, 0.51, 1.0), 134, 27, 121, 27, 55, 27), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/winter_storage_TT.pdna
+Reading DNA file... phase_4/dna/winter_storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_DL.pdna
+Reading DNA file... phase_8/dna/winter_storage_DL.pdna
+Reading DNA file... phase_8/dna/storage_DL_sz.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_8/dna/storage_DL_town.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_9300.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_8/dna/storage_DL_sz.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_BR.pdna
+Reading DNA file... phase_8/dna/winter_storage_BR.pdna
+Reading DNA file... phase_8/dna/storage_BR_sz.pdna
+Reading DNA file... phase_8/dna/the_burrrgh_sz.pdna
+gardenPage Unloading
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+AttributeError: ToonBase instance has no attribute 'localAvatar'
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+AttributeError: ToonBase instance has no attribute 'localAvatar'
+__handleAvatarChooserDone: 100000015, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.61, 0.16, 0.16, 1.0), (0.28, 0.32, 0.72, 1.0), (0.61, 0.16, 0.16, 1.0), (0.14, 0.11, 0.51, 1.0), 134, 27, 121, 27, 55, 27), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_BR.pdna
+Reading DNA file... phase_8/dna/storage_BR_sz.pdna
+Reading DNA file... phase_8/dna/the_burrrgh_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/winter_storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+avid: 100000015, gender: m
+current top = 134,27,121,27 and  bot = 55,27,
+topsList = [5, 9, 5, 9]
+bottomsList = [4, 2]
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\DistributedToon.py", line 245, in setDNAString
+    Toon.Toon.setDNAString(self, dnaString)
+  File "toontown\toon\Toon.py", line 577, in setDNAString
+    newDNA.makeFromNetString(dnaString)
+  File "toontown\toon\ToonDNA.py", line 2554, in makeFromNetString
+    self.armColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+AssertionError: _current_index + sizeof(tempvar) <= _datagram->get_length() at line 288 of c:\users\john\desktop\panda3d-master\built\include\datagramIterator.I
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 1, in <module>
+  File "toontown\toon\DistributedToon.py", line 245, in setDNAString
+    Toon.Toon.setDNAString(self, dnaString)
+  File "toontown\toon\Toon.py", line 577, in setDNAString
+    newDNA.makeFromNetString(dnaString)
+  File "toontown\toon\ToonDNA.py", line 2554, in makeFromNetString
+    self.armColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+AssertionError: _current_index + sizeof(tempvar) <= _datagram->get_length() at line 288 of c:\users\john\desktop\panda3d-master\built\include\datagramIterator.I
+avid: 100000015, gender: m
+current top = 134,27,121,27 and  bot = 55,27,
+topsList = [5, 9, 5, 9]
+bottomsList = [4, 2]
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+no shovel bar
+entered wait for zone redirect
+entered wait for set zone response - 2
+no shovel bar
+gardenPage Unloading
+__handleAvatarChooserDone: 100000015, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.61, 0.16, 0.16, 1.0), (0.28, 0.32, 0.72, 1.0), (0.61, 0.16, 0.16, 1.0), (0.14, 0.11, 0.51, 1.0), 134, 27, 121, 27, 55, 27), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_BR.pdna
+Reading DNA file... phase_8/dna/storage_BR_sz.pdna
+Reading DNA file... phase_8/dna/the_burrrgh_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+-----------Starting tailor interaction-----------
+avid: 100000015, gender: m
+current top = 134,27,121,27 and  bot = 55,27,
+topsList = [5, 9, 5, 9]
+bottomsList = [4, 2]
+-------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 2, in <module>
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 2, in <module>
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 2, in <module>
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\cyg_server\Desktop\Poodletooth-iLand-master\toontown\toonbase\ToontownStart.py", line 50, in __inject_wx
+    exec(code, globals())
+  File "<string>", line 2, in <module>
+IndexError: list index out of range
+-----------ending tailor interaction-----------
+avid: 100000015, gender: m
+current top = 134,27,121,27 and  bot = 55,27,
+topsList = [5, 9, 5, 9]
+bottomsList = [4, 2]
+-------------------------------------------------
+entered wait for zone redirect
+entered wait for set zone response - 2

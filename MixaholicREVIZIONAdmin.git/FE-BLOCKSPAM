@@ -1,0 +1,56 @@
+--OLD OUTDATED BLOCKSPAM, NEW AND HOMEMADE ONE IS CALLED "SPAM_PARTS"
+
+local blocks = 15
+
+--[[Edited version of Cyclically's FE Tool Duplicate Tools V3
+https://v3rmillion.net/member.php?action=profile&uid=785986
+
+%%% Full credit goes to Cyclically %%%
+
+%%  Don't touch below unless you know what you're doing  %%
+]]
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local runservice = game:GetService("RunService")
+local characters = {}
+LocalPlayer.Character:FindFirstChild("Humanoid"):UnequipTools()
+local currentamount = #LocalPlayer.Backpack:GetChildren()
+LocalPlayer.Character.Archivable = true
+local tempchar = LocalPlayer.Character:Clone()
+tempchar.Parent = workspace
+local savepos = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+local stepped = runservice.Stepped:Connect(function()
+    workspace.CurrentCamera.CameraSubject = tempchar:FindFirstChild("Humanoid")
+    for _, tool in pairs(LocalPlayer.Backpack:GetChildren()) do
+    if tool:IsA("Tool") then
+            tool.Parent = LocalPlayer
+        end
+    end
+    LocalPlayer.Character:ClearAllChildren()
+    local char = Instance.new("Model", workspace)
+    table.insert(characters, char)
+    Instance.new("Humanoid", char)
+    LocalPlayer.Character = char
+    repeat runservice.Stepped:Wait() until LocalPlayer.Character ~= nil
+end)
+repeat runservice.Stepped:Wait() until #LocalPlayer:GetChildren() - 4 - currentamount >= blocks - 1
+stepped:Disconnect()
+repeat runservice.Stepped:Wait() until LocalPlayer.Character:FindFirstChild("HumanoidRootPart") ~= nil
+for _, char in pairs(characters) do
+    char:Destroy()
+end
+for _, tool in pairs(LocalPlayer:GetChildren()) do
+    if tool:IsA("Tool") then
+        tool.Parent = LocalPlayer.Backpack
+    end
+end
+LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = savepos
+tempchar:Destroy()
+local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+for i=1,blocks do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = workspace.Terrain
+game:GetService("RunService").Stepped:wait()
+end

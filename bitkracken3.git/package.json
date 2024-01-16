@@ -1,0 +1,22 @@
+{
+  "name": "bitkrackenv3",
+  "version": "1.0.0",
+  "description": "This time it's anonymous!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodemixaholic/bitkracken3.git"
+  },
+  "author": "Samuel Lord",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodemixaholic/bitkracken3/issues"
+  },
+  "homepage": "https://github.com/nodemixaholic/bitkracken3#readme",
+  "dependencies": {
+    "monero-javascript": "^0.6.3"
+  }
+}

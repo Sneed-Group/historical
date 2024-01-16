@@ -1,0 +1,98 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1E325288>}
+NameShop : Should have found title, uh oh!
+[False, False, True, '', '', 'Poodle', 'tooth', 'Poodletooth']
+NameShop : Should have found first name, uh oh!
+[False, False, True, '', '', 'Poodle', 'tooth', 'Poodletooth']
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_8/dna/storage_DL.pdna
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_8/dna/storage_DL_town.pdna
+Reading DNA file... phase_8/dna/donalds_dreamland_9200.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_13/dna/storage_party_sz.pdna
+Reading DNA file... phase_13/dna/party_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_13/dna/storage_party_sz.pdna
+Reading DNA file... phase_13/dna/party_sz.pdna
+runpy._run_module_as_main:162,runpy._run_code:72,ToontownStart.<module>:217,OTPBase.run:34,Task.run:508,Task.step:465,ShowBase.__ivalLoop:1829,IntervalManager.step:94,IntervalManager.__doPythonCallbacks:122,MetaInterval.privPostEvent:519,MetaInterval.__doPythonCallbacks:495,Interval.privDoEvent:206,FunctionInterval.privInstant:88,DistributedPartyCannonActivity.d_setLanded:397
+Traceback (most recent call last):
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 720, in _checkFlyingToonCollision
+    self.__handleFlyingToonCollision(activeEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 773, in __handleFlyingToonCollision
+    self.__hitCloudPlatform(self.localFlyingToon, collisionEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 924, in __hitCloudPlatform
+    self.d_requestCloudHit(cloudNumber, base.localAvatar.style.getHeadColor())
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 903, in d_requestCloudHit
+    color.getX(),
+AttributeError: 'tuple' object has no attribute 'getX'
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 720, in _checkFlyingToonCollision
+    self.__handleFlyingToonCollision(activeEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 773, in __handleFlyingToonCollision
+    self.__hitCloudPlatform(self.localFlyingToon, collisionEntry)
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 924, in __hitCloudPlatform
+    self.d_requestCloudHit(cloudNumber, base.localAvatar.style.getHeadColor())
+  File "toontown\parties\DistributedPartyCannonActivity.py", line 903, in d_requestCloudHit
+    color.getX(),
+AttributeError: 'tuple' object has no attribute 'getX'

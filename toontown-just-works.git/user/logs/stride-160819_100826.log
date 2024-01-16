@@ -1,0 +1,137 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1E2DAB98>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.3, 0.3, 0.35, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+entered wait for zone redirect
+entered wait for set zone response - 2
+spec = {'parentEntId': 10030, 'pos': LPoint3f(0, 0, 0)}
+h = None
+spec = {'parentEntId': 10034, 'pos': LPoint3f(0, 0, 0)}
+h = None
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_5.5/dna/storage_estate.pdna
+Reading DNA file... phase_5.5/dna/estate_1.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+avid: 100000010, gender: m
+current hat = (6, 0, 0), glasses = (0, 0, 0), backpack = (0, 0, 0), shoes = (1, 1, 0)
+hatList = [6, 0, 0, 9, 0, 0]
+glassesList = [8, 0, 0]
+backpackList = [11, 0, 0]
+shoesList = [1, 1, 0, 2, 8, 0]
+entered wait for zone redirect
+entered wait for set zone response - 2
+adjusting item index -1
+exiting due to lack of items
+Cannon Rot:0.0 Angle:17.4132110646
+Cannon Rot:26.3163058509 Angle:29.6859796891
+Cannon Rot:26.3163058509 Angle:31.130467521
+start PosLPoint3f(61.7472, -67.8207, 5.02392) HprLVecBase3f(50.32, -13.87, 0)
+disable controls
+stopped
+enable controls
+Cannon Rot:6.39160410473 Angle:38.1968307553
+start PosLPoint3f(-41.5653, 71.048, 5.63248) HprLVecBase3f(-151.71, -6.8, 0)
+disable controls
+stopped
+enable controls
+Cannon Rot:8.31552190927 Angle:38.2
+Cannon Rot:8.31552190927 Angle:44.255869065
+start PosLPoint3f(-41.6372, 71.4869, 6.10952) HprLVecBase3f(-149.78, -0.740006, 0)
+disable controls
+but not really
+stopped
+enable controls
+Cannon Rot:8.32 Angle:33.4528041182
+start PosLPoint3f(-41.2803, 70.8741, 5.22928) HprLVecBase3f(-149.78, -11.55, 1.52498e-006)
+disable controls
+stopped
+enable controls
+Cannon Rot:14.9770668391 Angle:31.13
+start PosLPoint3f(62.4692, -67.1075, 5.02392) HprLVecBase3f(38.98, -13.87, 0)
+disable controls
+stopped
+enable controls
+start PosLPoint3f(35.6513, 1.45038, 14.6393) HprLVecBase3f(90.72, 3.83999, 1.92531e-006)
+disable controls
+stopped
+enable controls
+Cannon Rot:31.2300401404 Angle:32.8351322058
+Cannon Rot:36.0267838408 Angle:37.3664425634
+start PosLPoint3f(36.362, -2.00041, 13.7638) HprLVecBase3f(137.23, -7.63, 0)
+disable controls
+stopped
+enable controls
+Cannon Rot:-4.62480335679 Angle:31.8039040325
+start PosLPoint3f(-51.3574, -100.024, 5.78376) HprLVecBase3f(-28.62, -13.2, 0)
+disable controls
+walk
+Cannon Rot:19.3474666756 Angle:36.6261916998
+Cannon Rot:19.3474666756 Angle:34.6547910404
+Cannon Rot:16.3423455546 Angle:34.6547910404
+Cannon Rot:16.3423455546 Angle:38.1846696114
+Cannon Rot:14.2309783175 Angle:38.1846696114
+start PosLPoint3f(62.7814, -67.3951, 5.63083) HprLVecBase3f(38.23, -6.82, 0)
+disable controls
+stopped
+enable controls
+start PosLPoint3f(-41.2803, 70.8741, 5.22928) HprLVecBase3f(-149.78, -11.55, 1.52498e-006)
+disable controls
+stopped
+enable controls
+start PosLPoint3f(-41.2803, 70.8741, 5.22928) HprLVecBase3f(-149.78, -11.55, 1.52498e-006)
+disable controls
+stopped
+enable controls
+Cannon Rot:10.24527698 Angle:33.45
+Cannon Rot:8.0612427291 Angle:33.45
+Cannon Rot:6.43925116026 Angle:33.45
+Cannon Rot:6.43925116026 Angle:35.3479288781
+start PosLPoint3f(-41.4769, 70.8927, 5.39345) HprLVecBase3f(-151.66, -9.65001, 0)
+disable controls
+stopped
+enable controls
+start PosLPoint3f(35.7712, 0.862034, 14.6974) HprLVecBase3f(99.46, 4.69, 1.0708e-006)
+disable controls
+stopped
+enable controls
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+gardenPage Unloading

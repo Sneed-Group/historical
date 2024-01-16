@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>SPICY!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+    <style>
+      
+    @media screen and (min-width: 704px) {
+            h1 {
+                font-size: 80px;
+            }
+  
+            p {
+                font-size: 40px;
+            }
+        }
+  
+        @media screen and (max-width: 703px) {
+            h1 {
+                font-size: 40px;
+            }
+  
+            p {
+                font-size: 20px;
+            }
+        }
+      body {
+      	background-color: black;
+      	color: red
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Hello, world!</h1>
+    <p style="text-align: center;"><u><i>This is just the beginning for
+          NodeMixaholic.com,</i></u> things are about to get <i><b>spicy!</b></i></p>
+    <p>
+      <script>$(document).ready(function(){
+ 		  $(window).mousemove(function(e) {
+        let cursor = $('#cursor');
+        cursor.offset({
+            top: e.clientY - cursor.height() * .3,
+            left: e.clientX - cursor.width() * .8
+        });
+        cursor.on('dragstart', function(event) { event.preventDefault(); });
+        $(document).ready(function() {
+     		cursor.on("contextmenu",function(){
+        return false;
+     		}); 
+ 				});
+        $("body").css('cursor', 'none');
+    });
+});
+    </script> </p>
+    <img src="hot-cursor.gif" id="cursor" alt="" style="width: 10%; height: 30%;">
+  </body>
+</html>

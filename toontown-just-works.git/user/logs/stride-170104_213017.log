@@ -1,0 +1,28 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1F32A7D8>}
+__handleAvatarChooserDone: 100000010, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.17, 0.17, 1.0), (0.47, 0.44, 0.44, 1.0), (0.78, 0.17, 0.17, 1.0), (0.12, 0.11, 0.51, 1.0), 104, 27, 91, 27, 4, 1), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_OZ.pdna
+Reading DNA file... phase_6/dna/storage_OZ_sz.pdna
+Reading DNA file... phase_6/dna/outdoor_zone_sz.pdna
+TIMER startTime 878
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_6/dna/storage_DD_town.pdna
+Reading DNA file... phase_6/dna/donalds_dock_1100.pdna
+gardenPage Unloading

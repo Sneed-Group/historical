@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEMSNT", "GEMSNT\GEMSNT.csproj", "{799D54E2-40D1-4525-AF22-46DEA9253130}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{799D54E2-40D1-4525-AF22-46DEA9253130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799D54E2-40D1-4525-AF22-46DEA9253130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799D54E2-40D1-4525-AF22-46DEA9253130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799D54E2-40D1-4525-AF22-46DEA9253130}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3B63A2E-EC43-4EF5-A1C5-63D974DE966A}
+	EndGlobalSection
+EndGlobal

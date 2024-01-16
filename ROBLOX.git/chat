@@ -1,0 +1,7 @@
+local Action = game.Players:GetPlayers()
+  for i = 1,#Action do
+Action[i].Chatted:connect(function(Message)
+if Action[i].Name ~= "Sam_Lord" then
+  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("".."["..Action[i].Name.."]".." "..Message, "All") 
+ end)
+end

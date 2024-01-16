@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Christmas Countdown</title>
+<style>
+
+  
+
+body{
+background-color: #053b03;
+color: #e62f22;
+overflow: hidden;
+}
+
+.container {
+overflow: hidden;
+position: relative;
+}
+
+.bg {
+opacity: 0.25;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: auto;
+}
+
+.container::after {
+color: #e62f22;
+font-family: "Times New Roman", Times, serif;
+opacity: 1;
+}
+/* unvisited link */
+a:link {
+  color: lime;
+}
+
+/* visited link */
+a:visited {
+  color: lime;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e62f22;
+}
+
+/* selected link */
+a:active {
+  color: #e62f22;
+}
+
+/* The animation */
+@keyframes marquee{
+0%{transform: translateX(-100%);}
+100%{transform: translateX(100%);}
+}
+
+@keyframes marquee-reverse{
+0%{transform: translateX(100%);}
+100%{transform: translateX(-100%);}
+}
+ 
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+.notmarquee {
+animation: marquee 5s linear infinite;
+clear: both;
+}
+
+.notmarquee-rev {
+animation: marquee-reverse 5s linear infinite;
+clear: both;
+}
+}
+
+hr {
+border-top: 3px dashed red;
+}
+
+#musicButton {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+</style>
+<script>
+var musicPlayed = false
+const audio = new Audio(`12DaysOfChristmas.mp3`);
+function playMusic() {
+if (!musicPlayed) {
+audio.play(); audio.loop = true;
+musicPlayed = true
+document.getElementById('musicButton').innerText = "Click here to pause christmas music."
+} else {
+audio.loop = false; audio.pause();
+musicPlayed = false
+document.getElementById('musicButton').innerText = "Click here for christmas music."
+}
+}
+</script>
+</head>
+<body>
+<button id="musicButton" onclick="playMusic()">Click here for christmas music.</button>
+<div class="notmarquee-rev"><img height="17%" style="transform: scaleX(-1); -webkit-transform: scaleX(-1);" src="santa.png"></img></div>
+<h3>Christmas fun:</h3>
+<a href="https://santatracker.google.com" target="_blank">Google Santa Tracker</a> - <a target="_blank" href="https://www.noradsanta.org/">NORAD Santa Tracker</a> - <a target="_blank" href="https://www.northpole.com/">NorthPole.com</a>
+<hr></hr>
+<div class="container" width="100%" height="100%">
+<img class="bg" src="amazing-santa-head.png" alt="" draggable="false"></img>
+<h1 id="days">Christmas countdown: *DAYS* days</h1>
+<h2 id="time">Current time: *TIME*</h2>
+<div id="cal" width="100%" height="100%"></div>
+<script>
+const d = new Date();
+let day = d.getDate(); //same as on calendar
+let month = d.getMonth(); //one behind, so january is 0 and december is 11
+
+function getDaysInMonth(year, month) {
+month += 1
+return new Date(year, month, 0).getDate() + 1;
+}
+
+function getFirstDayInMonth(year, month) {
+return new Date(year, month, 1).getDay()
+}
+
+function getDayOfWeek(date) {
+if (date.getDay() == 0) {
+return "Sun"
+} else if (date.getDay() == 1) {
+return "Mon"
+} else if (date.getDay() == 2) {
+return "Tues"
+} else if (date.getDay() == 3) {
+return "Wed"
+} else if (date.getDay() == 4) {
+return "Thurs"
+} else if (date.getDay() == 5) {
+return "Fri"
+} else if (date.getDay() == 6) {
+return "Sat"
+} else {
+return "Undefined"
+}
+}
+
+let days = getDaysInMonth(d.getYear(), month)
+
+
+if (month < 11 || day > 25) {
+document.body.innerHTML = "<h1>Hope you had a merry Christmas!</h1>"
+document.getElementById("days").innerText = `Christmas countdown: 0 days`
+} else if (day == 25 && month == 11) {
+document.body.innerHTML = "<h1>Merry Christmas!</h1>"
+document.getElementById("days").innerText = `Christmas countdown: 0 days`
+} else {
+if (day == 24 && month == 11) {
+document.body.innerHTML = document.body.innerHTML + '<iframe width="30%" src="https://www.noradsanta.org/en-US/assets/map/embed.html"</iframe>>'
+}
+for (let i = 0; i < days; i++) {
+if (i > 0 && i < 25) {
+let a = d.getDay()
+document.getElementById("days").innerText = `Christmas countdown: ${25 - d.getDate()} days`
+let firstDay = getFirstDayInMonth(d.getFullYear(), 11)
+let day1 = new Date(d.getFullYear(), 11, i)
+if (getDayOfWeek(day1) == "Sun") {
+document.getElementById("cal").innerHTML = document.getElementById("cal").innerHTML + `<br><div id="${i}" style="float: left; clear: both; padding-right: 3%; border-style: solid; border-top: 3px solid red; border-bottom: 3px solid red; border-left: 3px solid red; border-right: 3px solid red;" width="2%"><h3 style="display: inline;">${getDayOfWeek(day1)}, ${i}</h3></div>`
+} else {
+document.getElementById("cal").innerHTML = document.getElementById("cal").innerHTML + `<div id="${i}" style="float: left; padding-right: 3%; border-style: solid; border-top: 3px solid red; border-bottom: 3px solid red; border-left: 3px solid red; border-right: 3px solid red;" width="2%"><h3 style="display: inline;">${getDayOfWeek(day1)}, ${i}</h3></div>`
+}
+if (i <= day) {
+document.getElementById(`${i}`).innerHTML = document.getElementById(`${i}`).innerHTML + `<h3 style="display: inline;"> *X*</h3>`
+}
+}
+}
+}
+
+
+setInterval(function(){
+var rd = new Date()
+if (rd.getHours() == 0 && rd.getMinutes() == 0 && rd.getSeconds() == 0) {
+window.location.reload()
+} else {
+console.log(`Current time: ${rd.getHours()}:${rd.getMinutes()}:${rd.getSeconds()}`)
+document.getElementById("time").innerText = `Current time: ${rd.toLocaleTimeString("en-US")} / ${rd.toLocaleTimeString("en-GB")}`
+}
+},1000);
+
+  
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<div class="notmarquee"><img height="17%" src="santa.png"></img></div>
+</div>
+</body>
+</html>

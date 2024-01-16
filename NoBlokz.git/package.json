@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@mozilla/readability": "^0.4.1",
+    "express": "^4.17.1",
+    "jsdom": "^16.5.3",
+    "request": "^2.88.2",
+    "helmet": "^4.6.0"
+  },
+  "name": "noblokz",
+  "version": "1.0.0",
+  "description": "Get rid of all the blocks before summer comes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "internet",
+    "creditToBanditHusky"
+  ],
+  "author": "Samuel Lord",
+  "license": "MIT"
+}

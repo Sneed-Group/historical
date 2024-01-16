@@ -1,0 +1,2 @@
+cp $1 /wallpapers/wallpaper
+nitrogen --set-auto /wallpapers/wallpaper

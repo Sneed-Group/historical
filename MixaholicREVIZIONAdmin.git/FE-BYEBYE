@@ -1,0 +1,41 @@
+--FE SUICIDE GUN
+--BY SPARKSAMMY
+--IT DISGUESES ITSELF AS YOUR OUTFIT, BUT ITS REALLY A POWERFUL SUICIDE PISTOL.
+--MAKE SURE YOU HAVE HAIR OR HAT ON (MEDEVIL HOOD OF MYSTERY RECCOMENDED)
+for _, a in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if a:IsA("Accessory") then
+newtool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+a.Handle.Mesh.MeshId = "rbxassetid://130099641"
+a.Handle.Parent = newtool
+newtool.Name = "Suicide gun"
+newtool.ToolTip = "With the " .. a.Name .. " wrap."
+
+function onActivate()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+wait()
+AnimationId = "181525546"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(4)
+wait(.3375)
+k:AdjustSpeed(0)
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+newtool.Activated:Connect(onActivate)
+
+end
+end
+--DIRTY HACKS TO PARENT HAT/TOOLS WITH REPLICATION ON FE--
+game:GetService'RunService'.Stepped:wait()
+grabknife.Parent = plr.Character
+for i = 1,3 do
+local lol = lp:FindFirstChildOfClass'Backpack':FindFirstChildOfClass'HopperBin'
+if lol:FindFirstChild'LocalScript' then lol:Destroy() end
+end
+-- hacky replication made by harkinian!!
+
+

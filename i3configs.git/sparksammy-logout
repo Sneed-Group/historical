@@ -1,0 +1,16 @@
+#!/bin/bash
+
+gmessage "Are you sure you want to shutdown/logout of your computer?" -center -title "Take action" -font "Sans bold 10" -default "Cancel" -buttons "_Cancel":1,"_Log out":2,"_Reboot":3,"_Shutdown":4,"Lock":5 >/dev/null
+
+case $? in
+1)
+echo "Cancel";;
+2)
+killall i3;;
+3)
+reboot;;
+4)
+shutdown -h now;;
+5)
+lock
+esac

@@ -1,0 +1,13 @@
+Character_Break = 50 -- 150 is max
+
+
+_=wait
+workspace.CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character.Head
+AnimationId="215384594"
+A=Instance.new("Animation")
+A.AnimationId="rbxassetid://"..AnimationId
+k=game:GetService("Workspace")[game:GetService("Players").LocalPlayer.Name]:FindFirstChild("Humanoid"):LoadAnimation(A)
+k:Play()
+k:AdjustSpeed(.25)
+_(Character_Break*.010625)
+k:AdjustSpeed(0)

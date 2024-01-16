@@ -1,0 +1,16 @@
+{
+  "name": "subtractor",
+  "version": "1.0.0",
+  "description": "SubTractor is a test app, similar to Oklomsy's Counter Bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Lord",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

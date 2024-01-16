@@ -1,0 +1,1 @@
+echo "$(zenity --title "SUsie by Sparksammy" --password)" | sudo -S -k $@ || echo "Task ended due to possible error. Error code: $?." 

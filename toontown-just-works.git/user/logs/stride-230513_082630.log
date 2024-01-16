@@ -1,0 +1,118 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1D09B8F0>}
+__handleAvatarChooserDone: 100000022, 'Poodletooth', ('mss', 'ss', 'l', 'm', (0.79, 0.16, 0.16, 1.0), (0.3, 0.3, 0.35, 1.0), (0.79, 0.16, 0.16, 1.0), (0.22, 0.17, 0.8, 1.0), 104, 27, 91, 27, 1, 11), 1
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_13/dna/storage_party_sz.pdna
+Reading DNA file... phase_13/dna/party_sz.pdna
+Traceback (most recent call last):
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1164, in handleMessageType
+    self.gotInterestDoneMessage(di)
+  File "otp\distributed\OTPClientRepository.py", line 1190, in gotInterestDoneMessage
+    self.handleInterestDoneMessage(di)
+  File "C:\Panda3D-1.10.0\direct\distributed\DoInterestManager.py", line 618, in handleInterestDoneMessage
+    messenger.send(event)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\distributed\ToontownClientRepository.py", line 835, in _handleEmuSetZoneDone
+    messenger.send(event)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\hood\QuietZoneState.py", line 285, in _handleSetZoneComplete
+    self.fsm.request('waitForLocalAvatarOnShard')
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 231, in __transition
+    self.__enter(aState, enterArgList)
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 217, in __enter
+    aState.enter(argList)
+  File "C:\Panda3D-1.10.0\direct\fsm\State.py", line 202, in enter
+    apply(self.__enterFunc, argList)
+  File "toontown\hood\QuietZoneState.py", line 303, in enterWaitForLocalAvatarOnShard
+    self._announceDone()
+  File "toontown\hood\QuietZoneState.py", line 314, in _announceDone
+    self._setZoneCompleteCallbacks()
+  File "toontown\toonbase\PythonUtil.py", line 31, in __call__
+    callback()
+  File "C:\Panda3D-1.10.0\direct\showbase\PythonUtil.py", line 93, in _do__call__
+    return self._function(*(self._args + args), **_kargs)
+  File "toontown\hood\Place.py", line 618, in _placeTeleportInPostZoneComplete
+    base.localAvatar.d_teleportGiveup(base.localAvatar.doId)
+TypeError: d_teleportGiveup() takes exactly 3 arguments (2 given)
+Traceback (most recent call last):
+  File "otp\otpbase\OTPBase.py", line 34, in run
+    taskMgr.run()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 508, in run
+    self.step()
+  File "C:\Panda3D-1.10.0\direct\task\Task.py", line 465, in step
+    self.mgr.poll()
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Panda3D-1.10.0\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1164, in handleMessageType
+    self.gotInterestDoneMessage(di)
+  File "otp\distributed\OTPClientRepository.py", line 1190, in gotInterestDoneMessage
+    self.handleInterestDoneMessage(di)
+  File "C:\Panda3D-1.10.0\direct\distributed\DoInterestManager.py", line 618, in handleInterestDoneMessage
+    messenger.send(event)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\distributed\ToontownClientRepository.py", line 835, in _handleEmuSetZoneDone
+    messenger.send(event)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Panda3D-1.10.0\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\hood\QuietZoneState.py", line 285, in _handleSetZoneComplete
+    self.fsm.request('waitForLocalAvatarOnShard')
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 231, in __transition
+    self.__enter(aState, enterArgList)
+  File "C:\Panda3D-1.10.0\direct\fsm\ClassicFSM.py", line 217, in __enter
+    aState.enter(argList)
+  File "C:\Panda3D-1.10.0\direct\fsm\State.py", line 202, in enter
+    apply(self.__enterFunc, argList)
+  File "toontown\hood\QuietZoneState.py", line 303, in enterWaitForLocalAvatarOnShard
+    self._announceDone()
+  File "toontown\hood\QuietZoneState.py", line 314, in _announceDone
+    self._setZoneCompleteCallbacks()
+  File "toontown\toonbase\PythonUtil.py", line 31, in __call__
+    callback()
+  File "C:\Panda3D-1.10.0\direct\showbase\PythonUtil.py", line 93, in _do__call__
+    return self._function(*(self._args + args), **_kargs)
+  File "toontown\hood\Place.py", line 618, in _placeTeleportInPostZoneComplete
+    base.localAvatar.d_teleportGiveup(base.localAvatar.doId)
+TypeError: d_teleportGiveup() takes exactly 3 arguments (2 given)
