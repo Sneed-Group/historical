@@ -1,4 +1,4 @@
-The Smeghead's License Revision 2
+The Samuel Public License Revision 3 (SPL-R3)
 
 Copyright (c) 2024 Samuel Lord
 
@@ -29,4 +29,16 @@ patents, trademarks, and trade secrets. Contributors acknowledge and consent tha
 they have no further claim, right, or interest in their contributions and agree to 
 relinquish any moral rights associated with the contributed content. This assignment 
 is effective upon the act of contributing to the Software, and contributors affirm 
-that they have the authority to make such an assignment.
+that they have the authority to make such an assignment. However, contributors retain 
+the right to modify their contributions.
+
+Furthermore, this document permits the reuse and redistribution of both executable 
+binaries and source code, contingent upon the inclusion of the previously mentioned 
+copyright notice and permission notice in all copies or substantial portions of the 
+Software. It is imperative that you explicitly acknowledge and agree that the 
+owner(s) retain ownership rights over the aforementioned source code.
+
+In addition, the owner of the code is granted the authority to update their copy of 
+The Samuel Public License (SPL) to the latest revision. This update may be undertaken 
+at the discretion of the owner to ensure alignment with any subsequent revisions 
+made to The Samuel Public License.
