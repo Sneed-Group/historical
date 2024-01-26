@@ -51,6 +51,10 @@ typedef struct multiboot_info {
 typedef mboot_memmap_t mmap_entry_t;
 typedef multiboot_info mmap_addr_length;
 
+void exit() {
+    panic("MISC CRASH");
+}
+
 void os() {
 	rloadstring("welcomescreen");
 	rloadstring("helpscreen");
@@ -85,6 +89,7 @@ void kern() {
 	panic("KERNEL-LEVEL CRASH");
 	}
 }
+
 int kernel_main(struct multiboot_info* mbd, unsigned int magic) {
 	mmap_entry_t* entry = mbd->mmap_addr;
 	while(entry < mbd->mmap_addr + mbd->mmap_length) {
