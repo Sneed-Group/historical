@@ -63,15 +63,15 @@ void os() {
 	while ( 1 == 1 ) {
 		rloadstring("basickeys");
 	}
-	panic("RUSHELL-LEVEL CRASH");
 }
 
 void kern() {
 	//extern bootloader();
 	//bootloader();
+    haltLoop();
 	clear(lastVGATextColor());
 	print("GEMS OK, WAITING A FEW TICKS TO TEST TIME... \n");
-	wait(100000000); //ok? ok.
+	wait(10); //ok? ok.
 	beep();
 	print("Getting frequency of A2 \n");
 	print("(might be garbled until fixed) \n");
@@ -84,10 +84,6 @@ void kern() {
 	waitSecs(5);
 	clear();
 	os();
-	while (1 == 1)
-	{
-	panic("KERNEL-LEVEL CRASH");
-	}
 }
 
 int kernel_main(struct multiboot_info* mbd, unsigned int magic) {

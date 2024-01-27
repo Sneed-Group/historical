@@ -78,5 +78,5 @@ void panic(char deets[128]) {
     print("\nAre colors working? (Order: Blue,Green,Lightblue,Red,Pink,Orange,White.)\n");
     showColors();
     print("Regular\n");
-    halt();
+    halt(1);
 }

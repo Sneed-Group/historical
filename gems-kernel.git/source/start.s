@@ -1,53 +1,52 @@
-// We declare the 'kernel_main' label as being external to this file.
-// That's because it's the name of the main C function in 'kernel.c'.
-.extern kernel_main
+/* The bootloader will look at this image and start execution at the symbol
+   designated as the entry point. */
+ENTRY(_start)
  
-// We declare the 'start' label as global (accessible from outside this file), since the linker will need to know where it is.
-// In a bit, we'll actually take a look at the code that defines this label.
-.global start
+/* Tell where the various sections of the object files will be put in the final
+   kernel image. */
+SECTIONS
+{
+	/* It used to be universally recommended to use 1M as a start offset,
+	   as it was effectively guaranteed to be available under BIOS systems.
+	   However, UEFI has made things more complicated, and experimental data
+	   strongly suggests that 2M is a safer place to load. In 2016, a new
+	   feature was introduced to the multiboot2 spec to inform bootloaders
+	   that a kernel can be loaded anywhere within a range of addresses and
+	   will be able to relocate itself to run from such a loader-selected
+	   address, in order to give the loader freedom in selecting a span of
+	   memory which is verified to be available by the firmware, in order to
+	   work around this issue. This does not use that feature, so 2M was
+	   chosen as a safer option than the traditional 1M. */
+	. = 2M;
  
-// Our bootloader, GRUB, needs to know some basic information about our kernel before it can boot it.
-// We give GRUB this information using a standard known as 'Multiboot'.
-// To define a valid 'Multiboot header' that will be recognised by GRUB, we need to hard code some
-// constants into the executable. The following code calculates those constants.
-.set MB_MAGIC, 0x1BADB002          // This is a 'magic' constant that GRUB will use to detect our kernel's location.
-.set MB_FLAGS, (1 << 0) | (1 << 1) // This tells GRUB to 1: load modules on page boundaries and 2: provide a memory map (this is useful later in development)
-// Finally, we calculate a checksum that includes all the previous values
-.set MB_CHECKSUM, (0 - (MB_MAGIC + MB_FLAGS))
+	/* First put the multiboot header, as it is required to be put very early
+	   in the image or the bootloader won't recognize the file format.
+	   Next we'll put the .text section. */
+	.text BLOCK(4K) : ALIGN(4K)
+	{
+		*(.multiboot)
+		*(.text)
+	}
  
-// We now start the section of the executable that will contain our Multiboot header
-.section .multiboot
-	.align 4 // Make sure the following data is aligned on a multiple of 4 bytes
-	// Use the previously calculated constants in executable code
-	.long MB_MAGIC
-	.long MB_FLAGS
-	// Use the checksum we calculated earlier
-	.long MB_CHECKSUM
+	/* Read-only data. */
+	.rodata BLOCK(4K) : ALIGN(4K)
+	{
+		*(.rodata)
+	}
  
-// This section contains data initialised to zeroes when the kernel is loaded
-.section .bss
-	// Our C code will need a stack to run. Here, we allocate 4096 bytes (or 4 Kilobytes) for our stack.
-	// We can expand this later if we want a larger stack. For now, it will be perfectly adequate.
-	.align 16
-	stack_bottom:
-		.skip 4096 // Reserve a 4096-byte (4K) stack
-	stack_top:
+	/* Read-write data (initialized) */
+	.data BLOCK(4K) : ALIGN(4K)
+	{
+		*(.data)
+	}
  
-// This section contains our actual assembly code to be run when our kernel loads
-.section .text
-	// Here is the 'start' label we mentioned before. This is the first code that gets run in our kernel.
-	start:
-		// First thing's first: we want to set up an environment that's ready to run C code.
-		// C is very relaxed in its requirements: All we need to do is to set up the stack.
-		// Please note that on x86, the stack grows DOWNWARD. This is why we start at the top.
-		mov $stack_top, %esp // Set the stack pointer to the top of the stack
+	/* Read-write data (uninitialized) and stack */
+	.bss BLOCK(4K) : ALIGN(4K)
+	{
+		*(COMMON)
+		*(.bss)
+	}
  
-		// Now we have a C-worthy (haha!) environment ready to run the rest of our kernel.
-		// At this point, we can call our main C function.
-		call kernel_main
- 
-		// If, by some mysterious circumstances, the kernel's C code ever returns, all we want to do is to hang the CPU
-		hang:
-			cli      // Disable CPU interrupts
-			hlt      // Halt the CPU
-			jmp hang // If that didn't work, loop around and try again.
+	/* The compiler may produce other sections, by default it will put them in
+	   a segment with the same name. Simply add stuff here as needed. */
+}

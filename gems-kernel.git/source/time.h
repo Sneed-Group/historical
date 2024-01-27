@@ -1,7 +1,7 @@
 //Made to create time at 100000000 TPS
 //by Sparksammy
 int time = 1;
-
+int halted = 0;
 void countOld() {
 	static long long int i; 
 	static int state = 0; 
@@ -20,12 +20,12 @@ void countOld() {
 	
 }
 
-void halt() {
-// do nothing.
+void halt(int halt) {
+    halted = halt;
 }
 
 void wait(uint32_t millis) {
-    uint32_t countdown = millis * 1193181.66667;
+    uint32_t countdown = millis * 1000;
     while (countdown > 0) {
         uint32_t countdown = countdown - 1;
     }
@@ -66,4 +66,15 @@ void disableCount() {
 
 void enableCount() {
 	countstate = true;
+}
+
+void haltLoop() {
+    while (true) {
+        if (halted == 0) {
+            break;
+        }
+        if (halted == 1) {
+            continue;
+        }
+    }
 }
