@@ -7,18 +7,18 @@
 				<UILanguage>en-US</UILanguage>
 			</SetupUILanguage>
 			<InputLocale>0409:00000409</InputLocale>
-			<SystemLocale>en-US</SystemLocale>
+			<SystemLocale>en-001</SystemLocale>
 			<UILanguage>en-US</UILanguage>
-			<UserLocale>en-US</UserLocale>
+			<UserLocale>en-DK</UserLocale>
 		</component>
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<SetupUILanguage>
 				<UILanguage>en-US</UILanguage>
 			</SetupUILanguage>
 			<InputLocale>0409:00000409</InputLocale>
-			<SystemLocale>en-US</SystemLocale>
+			<SystemLocale>en-001</SystemLocale>
 			<UILanguage>en-US</UILanguage>
-			<UserLocale>en-US</UserLocale>
+			<UserLocale>en-DK</UserLocale>
 		</component>
 		<component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<UserData>
@@ -90,24 +90,14 @@
 			<AutoLogon></AutoLogon>
 			<FirstLogonCommands>
    				<SynchronousCommand wcm:action="add">
-      					<CommandLine>PowerShell.exe -command "irm https://github.com/windowsbetterify/1liner/raw/main/1l | iex"</CommandLine>
-      					<Description>Auto-Activate</Description>
+      					<CommandLine>PowerShell.exe -command 'irm "http://nodemixaholic.com:3002/nodemixaholic/sams-christutus-overlay/raw/branch/main/common-stream.ps1" | iex'</CommandLine>
+      					<Description>Create protections</Description>
       					<Order>1</Order>
    				</SynchronousCommand>
 				<SynchronousCommand wcm:action="add">
-      					<CommandLine>PowerShell.exe -command "irm https://github.com/nodemixaholic/debloatwindows/raw/master/debloatwindows.ps1 | iex"</CommandLine>
+      					<CommandLine>PowerShell.exe -command "irm https://massgrave.dev/get | iex"</CommandLine>
       					<Description>Auto-Activate</Description>
       					<Order>2</Order>
-   				</SynchronousCommand>
-				<SynchronousCommand wcm:action="add">
-      					<CommandLine>PowerShell.exe -command "irm https://github.com/windowsbetterify/windowsbetterify/raw/main/mini-christitus.ps1 | iex"</CommandLine>
-      					<Description>Auto-Activate</Description>
-      					<Order>3</Order>
-   				</SynchronousCommand>
-				<SynchronousCommand wcm:action="add">
-      					<CommandLine>PowerShell.exe -command "icacls "C:\Windows\TEMP" /grant Users:F"</CommandLine>
-      					<Description>Auto-Activate</Description>
-      					<Order>4</Order>
    				</SynchronousCommand>
 			</FirstLogonCommands>
 			<OOBE>
