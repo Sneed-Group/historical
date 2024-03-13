@@ -94,11 +94,6 @@
       					<Description>Create protections</Description>
       					<Order>1</Order>
    				</SynchronousCommand>
-				<SynchronousCommand wcm:action="add">
-      					<CommandLine>PowerShell.exe -command "irm https://massgrave.dev/get | iex"</CommandLine>
-      					<Description>Auto-Activate</Description>
-      					<Order>2</Order>
-   				</SynchronousCommand>
 			</FirstLogonCommands>
 			<OOBE>
 				<ProtectYourPC>3</ProtectYourPC>
