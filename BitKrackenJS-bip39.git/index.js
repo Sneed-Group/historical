@@ -2,6 +2,7 @@ var CoinKey = require('coinkey') //1.0.0
 var bip39 = require('bip39')
 var hdkey = require('hdkey')
 var bitcoinTransaction = require('bitcoin-transaction');
+async function main() {
 var to = "1ShzJ7McjMYaboVFokny1LGMFLT7Y6qDj"; //change me to who you want the bitcoin to go to
 var mnemonic;
 var seed;
@@ -75,3 +76,5 @@ if (bip39.validateMnemonic(mnemonic)) {
 
 await new Promise(r => setTimeout(r, 13));
 }
+}
+main()
