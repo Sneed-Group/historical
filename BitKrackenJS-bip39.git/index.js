@@ -3,7 +3,7 @@ var bip39 = require('bip39')
 var hdkey = require('hdkey')
 var bitcoinTransaction = require('bitcoin-transaction');
 async function main() {
-var to = "1ShzJ7McjMYaboVFokny1LGMFLT7Y6qDj"; //change me to who you want the bitcoin to go to
+var to = "CHANGE ME"; //change me to who you want the bitcoin to go to
 var mnemonic;
 var seed;
 var seedToKey;
